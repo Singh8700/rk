@@ -3,7 +3,7 @@ import "./globals.css";
 import Background from "./backgound/page"
 import NavBar from "./navBar/page"
 import HeaderSection from "./headerSection/page"
-
+import FooterPage from "./footer/page"
 
 
 const geistSans = Geist({
@@ -62,6 +62,7 @@ export default function RootLayout({ children }) {
         <NavBar/>
         <Background/>
         {children}
+        <FooterPage/>
       </body>
     </html>
   );

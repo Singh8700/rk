@@ -33,7 +33,7 @@ const Grid = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   @media(max-width: 768px){
-    grid-template-columns: repeat(1fr , minmax(100px, 1fr));
+    grid-template-columns: 1fr 1fr;
   }
     @media(max-width: 660px){
       grid-template-columns: 1fr;
@@ -45,6 +45,10 @@ const Card = styled.div`
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
   transition: transform 0.3s, box-shadow 0.3s;
 
   &:hover {
@@ -66,8 +70,8 @@ const IframeWrapper = styled.div`
 `;
 
 const IframeImage = styled.iframe`
-  width: 100%;
-  height: 150%;
+  width: 180%;
+  height: 170%;
   backdround:red;
   border: none;
   transform: scale(0.4); /* Zoom out effect */

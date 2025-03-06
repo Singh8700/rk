@@ -65,8 +65,9 @@ const IframeWrapper = styled.div`
 `;
 
 const IframeImage = styled.iframe`
-  width: 200%;
+  width: 260%;
   height: 250%;
+
   border: none;
   transform: scale(0.4); /* Zoom out effect */
   transform-origin: top left;

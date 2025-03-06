@@ -133,7 +133,7 @@ const Wrapper = styled.div`
   justify-content:center;
   align-items:flex-start;
   flex-wrap:wrap;
-  padding:1rem;
+  padding:1rem 3rem;
   padding-bottom:10rem;
 h2{
 font-size:2.5rem;
@@ -237,21 +237,25 @@ width:100%;
 height:100%;
 position:absolute;
 top:0;
-left:13%;
+left:10%;
 z-index:99;
 object-fit:cover;
 }
 }
 }
 @media(max-width:990px){
+padding:1rem;
   .educationContent{
   width:100vw;
     .items{
-      width:350px;
+      width:300px;
       gap:20px;
+      font-size:2rem;
       .imgSection{
-      width:200px;
-      height:200px;
+      left:50%;
+      top:30%;
+      width:150px;
+      height:150px;
       }
     }
   }

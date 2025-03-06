@@ -61,7 +61,7 @@ const NavSection = styled.nav`
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 0px;
+    bottom: 25px;
     z-index: 999;
     left: 50%;
     backdrop-filter: blur(10px);

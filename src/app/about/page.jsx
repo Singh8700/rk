@@ -4,6 +4,7 @@ import React from 'react'
 import AboutPage from './aboutPage'
 import Education from './Education'
 import ProjectShowcase from './ProjectShow'
+import PosterPost from './posterPost'
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
     <AboutPage/>
     <Education/>
     <ProjectShowcase/>
+    <PosterPost/>
     </>
   )
 }

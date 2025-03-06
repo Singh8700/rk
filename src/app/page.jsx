@@ -4,6 +4,7 @@ import styled from "styled-components"
 import {motion} from 'framer-motion'
 import AboutPage from './about/aboutPage'
 import ProjectShowcase from './about/ProjectShow'
+import PosterPost from './about/posterPost'
 
 const page = () => {
 
@@ -60,6 +61,8 @@ const page = () => {
         </LandingImage>
       </LandingContent>
     </motion.div>
+    <ProjectShowcase showOnly={3}/>
+    <PosterPost showOnly={3}/>
     <motion.div 
     initial={{opacity:0,x:-200}}
     transition={{duration:1}}
@@ -68,7 +71,6 @@ const page = () => {
     >
     <AboutPage/>
     </motion.div>
-    <ProjectShowcase showOnly={3}/>
    </Wrapper>
   )
 }

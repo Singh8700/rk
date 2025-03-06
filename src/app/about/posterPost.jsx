@@ -18,7 +18,7 @@ const Title = styled.h2`
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: rgba(${() => Math.random() * 255}, ${() => Math.random() * 255}, ${() => Math.random() * 255},0.9);
+  color: rgba(${() => Math.random() * 255}, ${() => Math.random() * 255}, ${() => Math.random() * 255},0.3);
 font-weight:bold;
 font-family:'times new roman';
   @media (max-width: 768px) {
@@ -32,11 +32,8 @@ const Grid = styled.div`
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  @media(max-width: 1080px){
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-     @media(max-width: 768px){
-    grid-template-columns: 1fr 1fr;
+  @media(max-width: 768px){
+    grid-template-columns: repeat(1fr , minmax(100px, 1fr));
   }
     @media(max-width: 660px){
       grid-template-columns: 1fr;
@@ -60,21 +57,27 @@ const Card = styled.div`
 const IframeWrapper = styled.div`
   width: 100%;
   height: 300px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:blue;
   overflow: hidden;
   position: relative;
 `;
 
 const IframeImage = styled.iframe`
-  width: 200%;
-  height: 250%;
+  width: 100%;
+  height: 150%;
+  backdround:red;
   border: none;
   transform: scale(0.4); /* Zoom out effect */
   transform-origin: top left;
   pointer-events: none; /* Disable interactions */
   user-select: none;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   @media (max-width: 480px) {
     width: 300%;
@@ -135,69 +138,41 @@ const Button = styled.a`
 const projects = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "A modern portfolio website built with Next.js and styled-components.",
-    image: "https://singh8700.github.io/itsme/",
+    title: "Photoshop Poster Design Demo",
+    description: "Creative Photoshop poster design demo showcasing modern graphics and vibrant colors for marketing.",
+    image: "https://drive.google.com/file/d/1z7ByWfvyTNT2TMAzyTdLi4eCeAVRPDn0/preview",
   },
   {
-    "id": 8,
-    "title": "DigiMark",
-    "description": "DigiMark is a digital marketing tool designed to help users analyze and optimize their online presence. It offers insights into website performance, SEO metrics, and social media engagement.",
-    "image": "https://singh8700.github.io/digimark/"
+    id: 3,
+    title: "Photoshop Poster Design Demo",
+    description: "Creative Photoshop poster design demo showcasing modern graphics and vibrant colors for marketing.",
+    image: "https://drive.google.com/file/d/1ANWjpI-hjgAr359mQsFs4PGGU4gp4I_2/preview",
+  },
+  {
+    id: 5,
+    title: "Photoshop Poster Design Demo",
+    description: "Creative Photoshop poster design demo showcasing modern graphics and vibrant colors for marketing.",
+    image: "https://drive.google.com/file/d/1bJfgrzG33_BBhBXAGqLkekAJhFpQSCb-/preview"
+},
+{
+    id: 7,
+    title: "Photoshop Poster Design Demo",
+    description: "Creative Photoshop poster design demo showcasing modern graphics and vibrant colors for marketing.",
+    image: "https://drive.google.com/file/d/1r2M33BbfJrdh8bOlg6trHSArt0kX-9wp/preview"
+},
+  {
+    id: 8,
+    title: "CorelDRAW Logo Design",
+    description: "Professional logo created in CorelDRAW using blue and green colors, reflecting creativity and innovation.",
+    image: "https://drive.google.com/file/d/1XMwxIzCf-jhms-cXll3hNOeBMnXNBrNE/preview"
 }
 ,
   {
     id: 2,
-    title: "Portfolio Website 2",
-    description: "A modern portfolio website built with vite.js and styled-components.",
-    image: "https://singh8700.github.io/portfolio",
+    title: "CorelDRAW Logo Design",
+    description: "Professional logo created in CorelDRAW using blue and green colors, reflecting creativity and innovation.",
+    image: "https://drive.google.com/file/d/1Q52acYUW4VQlOJer6mfDFUgax0M0mXKW/preview",
   },
-  {
-    id: 3,
-    title: "Diecs Game",
-    description: "Diecs is a dice-based game by Rohit Kumar Singh. Roll the dice, score points, and aim for the highest score! Play here",
-    image: "https://singh8700.github.io/DiecsGame/",
-  },
-  {
-    "id": 5,
-    "title": "Image Search Tool",
-    "description": "An image search tool by Rohit Kumar Singh that allows users to search for images based on their queries.",
-    "image": "https://singh8700.github.io/imgsearch/"
-},
-{
-    "id": 7,
-    "title": "Books Manager",
-    "description": "A web-based application designed to help users manage their book collections efficiently, allowing for easy addition, editing, and organization of book details.",
-    "image": "https://singh8700.github.io/booksmanager/"
-},
-{
-    "id": 10,
-    "title": "Projects",
-    "description": "A collection of projects developed by Rohit Kumar Singh, showcasing various applications and tools, including a calculator with basic arithmetic functions.",
-    "image": "https://singh8700.github.io/projects/"
-}
-,
-  {
-    "id": 4,
-    "title": "Notes Management System",
-    "description": "A system designed to help users manage their notes efficiently, allowing for easy creation, editing, and organization of notes.",
-    "image": "https://singh8700.github.io/userListProject/"
-},
-{
-    "id": 9,
-    "title": "My Report",
-    "description": "A personal portfolio website showcasing the skills, resume, and projects of Rohit Kumar Singh, a web designer and front-end developer.",
-    "image": "https://singh8700.github.io/myreport/"
-}
-,
-  {
-    id: 6,
-    title: "Weather App",
-    description: "This is a weather app that provides users with real-time weather updates. It has a simple interface for easy location-based weather checks.",
-    image: "https://singh8700.github.io/weatherApps/"
-},
-
-
 ];
 
 export default function ProjectShowcase(props) {
@@ -208,7 +183,8 @@ export default function ProjectShowcase(props) {
     transition={{ duration: 1 }}
     >
     <Container>
-      <Title>My Projects</Title>
+    
+      <Title>Poster Design</Title>
       <Grid>
         {props.showOnly > 0 ? (
           projects.slice(0, props.showOnly).map((project) => (

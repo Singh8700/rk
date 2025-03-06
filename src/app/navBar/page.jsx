@@ -61,11 +61,11 @@ const NavSection = styled.nav`
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 25px;
+    bottom: 0px;
     z-index: 999;
     left: 50%;
     backdrop-filter: blur(10px);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
     border-radius: 25px;
     width: 400px;
     height: 75px;

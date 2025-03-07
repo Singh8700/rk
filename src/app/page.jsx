@@ -5,6 +5,8 @@ import {motion} from 'framer-motion'
 import AboutPage from './about/aboutPage'
 import ProjectShowcase from './about/ProjectShow'
 import PosterPost from './about/posterPost'
+import ServicesContainer from './services/page'
+import Contact from './contact/page'
 
 const page = () => {
 
@@ -63,6 +65,8 @@ const page = () => {
     </motion.div>
     <ProjectShowcase showOnly={3}/>
     <PosterPost showOnly={3}/>
+    <ServicesContainer/>
+    <Contact/>
     <motion.div 
     initial={{opacity:0,x:-200}}
     transition={{duration:1}}

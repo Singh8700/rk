@@ -88,8 +88,8 @@ const FooterPage = () => {
         <Section>
           <SectionTitle>Quick Links</SectionTitle>
           <SectionItem><Link href="/">Home</Link></SectionItem>
+          <SectionItem><Link href="/services">Services</Link></SectionItem>
           <SectionItem><Link href="/about">About</Link></SectionItem>
-          <SectionItem><Link href="/projects">Projects</Link></SectionItem>
           <SectionItem><Link href="/contact">Contact</Link></SectionItem>
         </Section>
         <Section>

@@ -15,8 +15,8 @@ const NavbarSection = () => {
     const pathname = usePathname()
    const navText = [
     {title : "home", path : "/", icon: <AiFillHome/> },
+    {title : "Services", path : "/services", icon: <SiTheodinproject/> },
     {title : "about", path : "/about", icon: <BsFillPersonFill/> },
-    {title : "Projects", path : "/projects", icon: <SiTheodinproject/> },
     {title : "contact", path : "/contact", icon: <IoMdContact/> }
    ]
 

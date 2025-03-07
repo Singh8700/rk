@@ -64,14 +64,13 @@ const IframeWrapper = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
-  background:blue;
   overflow: hidden;
   position: relative;
 `;
 
 const IframeImage = styled.iframe`
   width: 180%;
-  height: 170%;
+  height: 200%;
   backdround:red;
   border: none;
   transform: scale(0.4); /* Zoom out effect */
@@ -83,9 +82,12 @@ const IframeImage = styled.iframe`
   left: 50%;
   transform: translate(-50%, -50%);
 
-  @media (max-width: 480px) {
-    width: 300%;
-    height: 300%;
+  @media (max-width: 680px) {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+    width:360%;
+    height: 360%;
     transform: scale(0.3); /* More zoom out for smaller screens */
   }
 `;

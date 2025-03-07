@@ -67,7 +67,6 @@ const IframeWrapper = styled.div`
 const IframeImage = styled.iframe`
   width: 260%;
   height: 250%;
-
   border: none;
   transform: scale(0.4); /* Zoom out effect */
   transform-origin: top left;
@@ -77,8 +76,8 @@ const IframeImage = styled.iframe`
   top: 0;
   left: 0;
 
-  @media (max-width: 480px) {
-    width: 300%;
+  @media (max-width: 780px) {
+    width: 340%;
     height: 300%;
     transform: scale(0.3); /* More zoom out for smaller screens */
   }

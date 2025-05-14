@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Link from 'next/link'
 import styled from "styled-components"
 import {motion} from 'framer-motion'
 import AboutPage from './about/aboutPage'
@@ -43,13 +44,17 @@ const page = () => {
           </p>
           <span>
           <button>
+          <Link href="/contact">
           Get in
           <span> Touch</span>
+          </Link>
           </button>
-          <button>
-          View My
-          <span> Work</span>
-          </button>
+         <button>
+         <Link href="/about">
+         View My
+         <span> Work</span>
+         </Link>
+         </button>
           </span>
         </LandingText>
         <LandingImage>

@@ -148,9 +148,9 @@ const projects = [
 ,
   {
     id: 2,
-    title: "Portfolio Website 2",
-    description: "A modern portfolio website built with vite.js and styled-components.",
-    image: "https://singh8700.github.io/portfolio",
+    title: "School Web Page",
+    description: "A modern school website built with nextjs and styled-components.",
+    image: "https://school-rho-neon.vercel.app/",
   },
   {
     id: 3,

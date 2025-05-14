@@ -32,12 +32,15 @@ const SectionsContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   margin-bottom: 3.5rem;
+  padding-right:15px;
 `;
 
 const Section = styled.div`
   flex: 1;
-  min-width: 200px;
-  max-width: 250px;
+  min-width: 150px;
+  max-width: 300px;
+  align-items:center;
+  // background:red;
 `;
 
 const SectionTitle = styled.h3`

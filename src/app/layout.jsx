@@ -29,7 +29,7 @@ export const metadata = {
     siteName: "Rohit Portfolio",
     images: [
       {
-        url: "/imgs/pic01.png", // Public folder se image ka path
+        url: "/imgs/favicon.jpg", // Public folder se image ka path
         width: 1200,
         height: 630,
         alt: "Rohit Portfolio Banner",
@@ -41,7 +41,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Rohit | Web Developer",
     description: "Specializing in front-end development and responsive web design.",
-    images: ["/imgs/pic01.png"], // Public folder se image ka path
+    images: ["/imgs/favicon.jpg"], // Public folder se image ka path
   },
 };
 

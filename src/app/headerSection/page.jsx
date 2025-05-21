@@ -21,7 +21,7 @@ export default page
 const Heading = styled.h1`
   width:100%;
   height:max-content;
-  font-size:3rem;
+  font-size:2rem;
   display:flex;
   justify-content:flex-end;
   align-items:center;

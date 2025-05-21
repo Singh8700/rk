@@ -1,7 +1,5 @@
-import ContactPage from "./contact"; // This can be a client component
-
 export const metadata = {
-  title: "Contact Page | Front-End Web Developer",
+  title: "Projects Page | Front-End Web Developer",
   description:
     "Hey there! I'm Rohit, a passionate web developer specializing in front-end development...",
   keywords: [
@@ -17,7 +15,7 @@ export const metadata = {
   authors: [{ name: "Rohit Kumar" }],
   creator: "Rohit Kumar",
   openGraph: {
-    title: "Contact Page | Front-End Web Developer",
+    title: "Projects Page | Front-End Web Developer",
     description:
       "Passionate web developer with expertise in front-end technologies. Let's collaborate to bring your vision to life!",
     url: "https://rk9600.github.io/rk960/",
@@ -34,12 +32,21 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Page | Front-End Web Developer",
+    title: "Projects Page | Front-End Web Developer",
     description: "Specializing in front-end development and responsive web design.",
     images: ["/imgs/favicon.jpg"],
   },
 };
 
-export default function Page() {
-  return <ContactPage />;
+import ProjectShowcase from "./ProjectShow"
+import  PosterPost from "./posterPost"
+const page = () => {
+    return (
+      <div style={{"margin-top":"50px"}}>
+        <ProjectShowcase />
+        <PosterPost />
+      </div>
+    )
 }
+
+export default page

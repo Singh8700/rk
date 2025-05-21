@@ -4,10 +4,10 @@ import Link from 'next/link'
 import styled from "styled-components"
 import {motion} from 'framer-motion'
 import AboutPage from './about/aboutPage'
-import ProjectShowcase from './about/ProjectShow'
-import PosterPost from './about/posterPost'
-import ServicesContainer from './services/page'
-import Contact from './contact/page'
+import ProjectShowcase from './projects/ProjectShow'
+import PosterPost from './projects/posterPost'
+import ServicesContainer from './services/service'
+import Contact from './contact/contact'
 
 const page = () => {
 

@@ -6,6 +6,7 @@ import { AiFillHome } from 'react-icons/ai';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { SiTheodinproject } from "react-icons/si";
 import { IoMdContact } from 'react-icons/io';
+import { FaDiagramProject } from "react-icons/fa6";
 import {motion} from 'framer-motion';
 
 
@@ -14,10 +15,11 @@ const NavbarSection = () => {
     
     const pathname = usePathname()
    const navText = [
-    {title : "home", path : "/", icon: <AiFillHome/> },
     {title : "Services", path : "/services", icon: <SiTheodinproject/> },
     {title : "about", path : "/about", icon: <BsFillPersonFill/> },
-    {title : "contact", path : "/contact", icon: <IoMdContact/> }
+    {title : "home", path : "/", icon: <AiFillHome/> },
+    {title : "contact", path : "/contact", icon: <IoMdContact/> },
+    {title : "projects", path : "/projects", icon: <FaDiagramProject/> },
    ]
 
    
@@ -67,14 +69,14 @@ const NavSection = styled.nav`
     backdrop-filter: blur(10px);
     transform: translate(-50%, -30%);
     border-radius: 25px;
-    width: 400px;
+    width: 500px;
     height: 75px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     @media(max-width:780px){
-    width:350px;
+    width:400px;
     padding: 0 10px;
     }
 `
@@ -83,14 +85,14 @@ const ListContent = styled.ul`
         justify-content: space-around;
         align-items: center;
         gap: 20px;
-        width: 100%;
+        width: 110%;
         text-transform: capitalize;
     `
 const Li = styled.li`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 18%;
     // background: red;
     position: relative;
     // overflow-x: hidden;

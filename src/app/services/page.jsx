@@ -1,114 +1,46 @@
-"use client";
+import Services from "./service"; // This can be a client component
 
-import React from "react";
-import styled from "styled-components";
-import { motion } from "framer-motion";
-import { FaLaptopCode, FaBullhorn, FaChartLine, FaDatabase, FaEnvelopeOpenText, FaFileExcel } from "react-icons/fa";
-import Link from "next/link";
-
-const ServicesContainer = styled(motion.div)`
-  width: 100%;
-  min-height: 100vh;
-  margin-top: 2rem;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 80px 20px;
-  font-family: 'Poppins';
-`;
-
-const Title = styled.h1`
-  font-size: 2.5rem;
-  color: #ffcc70;
-  margin-bottom: 30px;
-  text-align: center;
-`;
-
-const ServicesGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  width: 100%;
-  max-width: 1200px;
-`;
-
-const ServiceCard = styled(motion.div)`
-  background: #111111;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
-  &:hover {
-    transform: translateY(-10px);
-  }
-`;
-
-const Icon = styled.div`
-  font-size: 2.5rem;
-  color: rgb(${()=>  Math.random() * 255},${()=>  Math.random() * 255},${()=>  Math.random() * 255});
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
-`;
-
-const ServiceTitle = styled.h3`
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-`;
-
-const ServiceDesc = styled.p`
-  font-size: 0.9rem;
-  color: #d1d1d1;
-  margin-bottom: 10px;
-`;
-
-const WhatsappLink = styled.a`
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 15px;
-  background: #25d366;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-  &:hover {
-    background: #1ebe5d;
-  }
-`;
-
-const servicesData = [
-  { icon: <FaLaptopCode />, title: "Web Design", desc: "Stand out online with stunning, high-converting web designs tailored for success!", link: "https://wa.me/918700750589" },
-  { icon: <FaBullhorn />, title: "Social Media Ads Campaigns", desc: "Maximize your reach with powerful, data-driven social media ad strategies!", link: "https://wa.me/918700750589" },
-  { icon: <FaChartLine />, title: "Facebook & Instagram Management", desc: "Dominate social media with engaging content and strategic growth management!", link: "https://wa.me/918700750589" },
-  { icon: <FaDatabase />, title: "Web Development", desc: "Transform ideas into high-performance, feature-rich web applications!", link: "https://wa.me/918700750589" },
-  { icon: <FaEnvelopeOpenText />, title: "E-mail Scraping", desc: "Unlock potential leads with precision-targeted email data extraction!", link: "https://wa.me/918700750589" },
-  { icon: <FaFileExcel />, title: "Excel Data Management", desc: "Optimize your workflow with structured, automated Excel data solutions!", link: "https://wa.me/918700750589" }
-];
-
-const ServicesPage = () => {
-  return (
-    <ServicesContainer
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
-      <Title>Our Services</Title>
-      <ServicesGrid>
-        {servicesData.map((service, index) => (
-          <ServiceCard key={index} whileHover={{ scale: 1.05 }}>
-            <Icon>{service.icon}</Icon>
-            <ServiceTitle>{service.title}</ServiceTitle>
-            <ServiceDesc>{service.desc}</ServiceDesc>
-            <WhatsappLink href={service.link} target="_blank">Contact on WhatsApp</WhatsappLink>
-          </ServiceCard>
-        ))}
-      </ServicesGrid>
-    </ServicesContainer>
-  );
+export const metadata = {
+  title: "Services Page | Front-End Web Developer",
+  description:
+    "Hey there! I'm Rohit, a passionate web developer specializing in front-end development...",
+  keywords: [
+    "Web Developer",
+    "Front-End Developer",
+    "UI/UX",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "React",
+    "Responsive Design",
+    "Digital Marketing price"
+  ],
+  authors: [{ name: "Rohit Kumar" }],
+  creator: "Rohit Kumar",
+  openGraph: {
+    title: "Services Page | Front-End Web Developer",
+    description:
+      "Passionate web developer with expertise in front-end technologies. Let's collaborate to bring your vision to life!",
+    url: "https://rk9600.github.io/rk960/",
+    siteName: "Rohit Kumar Portfolio",
+    images: [
+      {
+        url: "/imgs/favicon.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Rohit Kumar Portfolio Banner",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Services Page | Front-End Web Developer",
+    description: "Specializing in front-end development and responsive web design.",
+    images: ["/imgs/favicon.jpg"],
+  },
 };
 
-export default ServicesPage;
+export default function Page() {
+  return <Services />;
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://rk960.github.io/rk960/
+
+# Sitemaps
+Sitemap: https://rk960.github.io/rk960/sitemap.xml

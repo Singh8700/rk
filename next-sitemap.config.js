@@ -4,10 +4,11 @@ module.exports = {
     generateRobotsTxt: true, // robots.txt भी generate करेगा
     changefreq: 'daily',
     priority: 0.7,
-    sitemapSize: 7000,
+    sitemapSize: 10000,
     exclude: ['/admin/*', '/secret-page'],
     robotsTxtOptions: {
       policies: [{ userAgent: '*', allow: '/' }],
     },
+    outDir: './out', // if using static export
   };
   

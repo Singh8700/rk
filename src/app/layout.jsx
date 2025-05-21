@@ -17,29 +17,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Rohit | Front-End Web Developer",
+  title: "Rohit Kumar | Front-End Web Developer",
   description: "Hey there! I'm Rohit, a passionate web developer specializing in front-end development. With 3 years of experience, I craft elegant, responsive, and efficient websites. Let's build something amazing together!",
   keywords: ["Web Developer", "Front-End Developer", "UI/UX", "JavaScript", "HTML", "CSS", "React", "Responsive Design"],
-  authors: [{ name: "Rohit" }],
-  creator: "Rohit",
+  authors: [{ name: "Rohit Kumar" }],
+  creator: "Rohit Kumar",
   openGraph: {
-    title: "Rohit | Front-End Web Developer",
+    title: "Rohit Kumar | Front-End Web Developer",
     description: "Passionate web developer with expertise in front-end technologies. Let's collaborate to bring your vision to life!",
     url: "https://yourwebsite.com",
-    siteName: "Rohit Portfolio",
+    siteName: "Rohit Kumar Portfolio",
     images: [
       {
         url: "/imgs/favicon.jpg", // Public folder se image ka path
         width: 1200,
         height: 630,
-        alt: "Rohit Portfolio Banner",
+        alt: "Rohit Kumar Portfolio Banner",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rohit | Web Developer",
+    title: "Rohit Kumar | Web Developer",
     description: "Specializing in front-end development and responsive web design.",
     images: ["/imgs/favicon.jpg"], // Public folder se image ka path
   },

@@ -105,7 +105,7 @@ const FooterPage = () => {
         <Section>
           <SectionTitle>Contact Info</SectionTitle>
           <SectionItem>Delhi, India</SectionItem>
-          <SectionItem>rohit.si8700@gmail.com</SectionItem>
+          <SectionItem>rohitfolio8700@gmail.com</SectionItem>
           <SectionItem>+91 8700750589</SectionItem>
         </Section>
       </SectionsContainer>
@@ -120,7 +120,7 @@ const FooterPage = () => {
             <FaCoffee />
           </IconContainer>
         </FooterText>
-        <FooterText>© 2025 rohit.singh8700. All rights reserved.</FooterText>
+        <FooterText>© 2025 rk960 . All rights reserved.</FooterText>
       </FooterBottom>
     </FooterContainer>
   );

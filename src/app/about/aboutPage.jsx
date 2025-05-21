@@ -48,7 +48,7 @@ const page = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          Hey there! I'm Kumas, a passionate web developer with a knack for crafting elegant and responsive websites. With 3 years of experience in the field, I specialize in front-end development, bringing designs to life through clean and efficient code. I'm always seeking new challenges and learning new technologies to stay ahead in the rapidly evolving web development landscape. If you're looking for a dedicated and skilled web developer, look no further – let's create something amazing together!
+          Hey there! I'm Rohit Kumar, a passionate web developer with a knack for crafting elegant and responsive websites. With 3 years of experience in the field, I specialize in front-end development, bringing designs to life through clean and efficient code. I'm always seeking new challenges and learning new technologies to stay ahead in the rapidly evolving web development landscape. If you're looking for a dedicated and skilled web developer, look no further – let's create something amazing together!
         </motion.p>
         <Skills>
           <motion.div

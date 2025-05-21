@@ -11,7 +11,7 @@ const page = () => {
        animate={{opacity:1}}
        transition={{duration:1}}
        >
-        It's Me
+        RK Portfolio
        </motion.h1>
     </Heading>
   )

@@ -66,18 +66,18 @@ const ContactPage = () => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}
       style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", width: "100vw", }}>
       <Card>
-        <Title>Rohit Singh</Title>
+        <Title>Rohit Kumar</Title>
         <Tagline>"Turning ideas into reality. Let's connect!"</Tagline>
         <ContactItem href="https://wa.me/8700750589" target="_blank">
           <FaWhatsapp size={20} /> WhatsApp
         </ContactItem>
-        <ContactItem href="https://instagram.com/singh_87_singh" target="_blank">
+        <ContactItem href="https://instagram.com/rkumarr960" target="_blank">
           <FaInstagram size={20} /> Instagram
         </ContactItem>
-        <ContactItem href="https://github.com/Singh8700" target="_blank">
+        <ContactItem href="https://github.com/rk960" target="_blank">
           <FaGithub size={20} /> GitHub
         </ContactItem>
-        <ContactItem href="mailto:rohit.si8700@gmail.com">
+        <ContactItem href="mailto:rohitfolio8700@gmail.com">
           <FaEnvelope size={20} /> Email
         </ContactItem>
       </Card>

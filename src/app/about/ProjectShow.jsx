@@ -137,13 +137,13 @@ const projects = [
     id: 1,
     title: "Portfolio Website",
     description: "A modern portfolio website built with Next.js and styled-components.",
-    image: "https://singh8700.github.io/itsme/",
+    image: "https://rk960.github.io/itsme/",
   },
   {
     "id": 8,
     "title": "DigiMark",
     "description": "DigiMark is a digital marketing tool designed to help users analyze and optimize their online presence. It offers insights into website performance, SEO metrics, and social media engagement.",
-    "image": "https://singh8700.github.io/digimark/"
+    "image": "https://rk960.github.io/digimark/"
 }
 ,
   {
@@ -156,45 +156,45 @@ const projects = [
     id: 3,
     title: "Diecs Game",
     description: "Diecs is a dice-based game by Rohit Kumar Singh. Roll the dice, score points, and aim for the highest score! Play here",
-    image: "https://singh8700.github.io/DiecsGame/",
+    image: "https://rk960.github.io/DiecsGame/",
   },
   {
     "id": 5,
     "title": "Image Search Tool",
     "description": "An image search tool by Rohit Kumar Singh that allows users to search for images based on their queries.",
-    "image": "https://singh8700.github.io/imgsearch/"
+    "image": "https://rk960.github.io/imgsearch/"
 },
 {
     "id": 7,
     "title": "Books Manager",
     "description": "A web-based application designed to help users manage their book collections efficiently, allowing for easy addition, editing, and organization of book details.",
-    "image": "https://singh8700.github.io/booksmanager/"
+    "image": "https://rk960.github.io/booksmanager/"
 },
 {
     "id": 10,
     "title": "Projects",
     "description": "A collection of projects developed by Rohit Kumar Singh, showcasing various applications and tools, including a calculator with basic arithmetic functions.",
-    "image": "https://singh8700.github.io/projects/"
+    "image": "https://rk960.github.io/projects/"
 }
 ,
   {
     "id": 4,
     "title": "Notes Management System",
     "description": "A system designed to help users manage their notes efficiently, allowing for easy creation, editing, and organization of notes.",
-    "image": "https://singh8700.github.io/userListProject/"
+    "image": "https://rk960.github.io/userListProject/"
 },
 {
     "id": 9,
     "title": "My Report",
     "description": "A personal portfolio website showcasing the skills, resume, and projects of Rohit Kumar Singh, a web designer and front-end developer.",
-    "image": "https://singh8700.github.io/myreport/"
+    "image": "https://rk960.github.io/myreport/"
 }
 ,
   {
     id: 6,
     title: "Weather App",
     description: "This is a weather app that provides users with real-time weather updates. It has a simple interface for easy location-based weather checks.",
-    image: "https://singh8700.github.io/weatherApps/"
+    image: "https://rk960.github.io/weatherApps/"
 },
 
 

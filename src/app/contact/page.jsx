@@ -3,7 +3,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { FaWhatsapp, FaInstagram, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaGithub, FaEnvelope, FaFacebook } from "react-icons/fa";
 
 const Card = styled(motion.div)`
   width: 350px;
@@ -41,6 +41,15 @@ const Tagline = styled.p`
   max-width: 90%;
 `;
 
+const SocialMediaCard = styled.div`
+  display: flex;
+  width:100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+`;
+
 const ContactItem = styled.a`
   display: flex;
   align-items: center;
@@ -52,7 +61,7 @@ const ContactItem = styled.a`
   text-decoration: none;
   color: white;
   transition: 0.3s;
-  width: 100%;
+  width: max-content;
   justify-content: center;
 
   &:hover {
@@ -68,11 +77,15 @@ const ContactPage = () => {
       <Card>
         <Title>Rohit Kumar</Title>
         <Tagline>"Turning ideas into reality. Let's connect!"</Tagline>
+        <SocialMediaCard>
         <ContactItem href="https://wa.me/8700750589" target="_blank">
           <FaWhatsapp size={20} /> WhatsApp
         </ContactItem>
         <ContactItem href="https://instagram.com/rkumarr960" target="_blank">
           <FaInstagram size={20} /> Instagram
+        </ContactItem>
+        <ContactItem href="https://www.facebook.com/share/19MnmHEFUV/" target="_blank">
+          <FaFacebook size={20} /> Facebook
         </ContactItem>
         <ContactItem href="https://github.com/rk960" target="_blank">
           <FaGithub size={20} /> GitHub
@@ -80,6 +93,7 @@ const ContactPage = () => {
         <ContactItem href="mailto:rohitfolio8700@gmail.com">
           <FaEnvelope size={20} /> Email
         </ContactItem>
+        </SocialMediaCard>
       </Card>
     </motion.div>
   );

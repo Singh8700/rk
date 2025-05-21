@@ -39,16 +39,17 @@ const Section = styled.div`
   flex: 1;
   min-width: 150px;
   max-width: 300px;
-  align-items:center;
+
   // background:red;
 `;
 
-const SectionTitle = styled.h3`
+const SectionTitle = styled.h2`
   margin-bottom: 15px;
+  font-size:1.5rem;
   color: rgb(${()=>  Math.random() * 255},${()=>  Math.random() * 255},${()=>  Math.random() * 255});
 `;
 
-const SectionItem = styled.p`
+const SectionItem = styled.h2`
   margin: 5px 0;
   color: #f8f9fa;
 `;
@@ -64,11 +65,13 @@ const FooterBottom = styled.div`
   justify-content: center;
 `;
 
-const FooterText = styled.p`
+const FooterText = styled.h1`
   margin: 0;
   display:flex;
   justify-content:center;
   color: #f8f9fa;
+  font-size:0.7rem;
+  break-word:break-all;
 `;
 
 const IconContainer = styled.span`
@@ -100,7 +103,7 @@ const FooterPage = () => {
           <SectionItem>Web Development</SectionItem>
           <SectionItem>UI/UX Design</SectionItem>
           <SectionItem>React Web Apps</SectionItem>
-          <SectionItem>Next.js</SectionItem>
+          <SectionItem>Nex`t.js</SectionItem>
         </Section>
         <Section>
           <SectionTitle>Contact Info</SectionTitle>
@@ -120,7 +123,8 @@ const FooterPage = () => {
             <FaCoffee />
           </IconContainer>
         </FooterText>
-        <FooterText>© 2025 rk960 . All rights reserved.</FooterText>
+        <FooterText>© 2025 rohit kumar 960. All rights reserved. Developed by rohit kumar 960</FooterText>
+       
       </FooterBottom>
     </FooterContainer>
   );

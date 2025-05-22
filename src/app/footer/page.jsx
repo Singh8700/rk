@@ -113,9 +113,9 @@ const FooterPage = () => {
         </Section>
         <Section>
           <SectionTitle>Contact Info</SectionTitle>
-          <SectionItem>Delhi, India</SectionItem>
-          <SectionItem>rohitfolio8700@gmail.com</SectionItem>
-          <SectionItem>+91 8700750589</SectionItem>
+          <SectionItem ><Link href="https://www.google.com/maps/place/Delhi,+India" target="_blank">Delhi, India</Link></SectionItem>
+          <SectionItem><Link href="mailto:rohitfolio8700@gmail.com" target="_blank">rohitfolio8700@gmail.com</Link></SectionItem>
+          <SectionItem><Link href="tel:+918700750589" target="_blank">+91 8700750589</Link></SectionItem>
         </Section>
       </SectionsContainer>
       <FooterBottom>

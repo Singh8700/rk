@@ -19,22 +19,23 @@ const page = () => {
 
 export default page
 const Heading = styled.h1`
-  width:100%;
+  width:100vw;
   height:max-content;
   font-size:2rem;
   display:flex;
   justify-content:flex-end;
   align-items:center;
   font-family: 'Times New Roman', Times, serif;
-  padding-top:10px;
+  // padding-top:10px;
   position:fixed;
-  color:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255},0.8);
   font-weight:bold;
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
   top:0;
-  right:5%;
+  right:0;
   z-index:999;
-  backdrop-filter:blur(5px);
+  backdrop-filter:blur(20px);
+  h1{
+  padding:0.5rem 1rem;
+  }
   @media(max-width:660px){
    font-size:2rem
    }

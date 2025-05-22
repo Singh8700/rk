@@ -17,19 +17,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Rohit Kumar | Front-End Web Developer",
-  description: "Hey there! I'm Rohit, a passionate web developer specializing in front-end development. With 3 years of experience, I craft elegant, responsive, and efficient websites. Let's build something amazing together!",
-  keywords: ["Web Developer", "Front-End Developer", "UI/UX", "JavaScript", "HTML", "CSS", "React", "Responsive Design"],
-  authors: [{ name: "Rohit Kumar" }],
+  title: "Rohit Kumar | Creative Front-End Web Designer | Responsive & Modern Websites",
+  description:
+    "Discover Rohit Kumar, a skilled front-end developer with 3 years of experience building fast, responsive, and visually stunning websites using React, JavaScript, HTML, and CSS. Let’s create exceptional digital experiences together!",
+  keywords: [
+    "Web Developer",
+    "Front-End Developer",
+    "UI/UX",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "React",
+    "Responsive Design",
+    "rk960",
+    "rk96x0",
+    "rk960 portfolio",
+    "rk96x0 portfolio",
+    "rk96x0 Instagram profile",
+  ],
+  authors: [
+    { name: "Rohit Kumar" },
+    { name: "rk960" },
+    { name: "rk96x0" },
+  ],
   creator: "Rohit Kumar",
   openGraph: {
-    title: "Rohit Kumar | Front-End Web Developer",
-    description: "Passionate web developer with expertise in front-end technologies. Let's collaborate to bring your vision to life!",
-    url: "https://yourwebsite.com",
+    title: "Rohit Kumar | Creative Front-End Web Designer | Responsive & Modern Websites",
+    description:
+      "Explore the portfolio of Rohit Kumar, specializing in building fast, scalable, and beautiful websites with React and modern front-end technologies. Let’s bring your ideas to life!",
+    url: "https://rk9600.github.io/rk960/",
     siteName: "Rohit Kumar Portfolio",
     images: [
       {
-        url: "/imgs/favicon.jpg", // Public folder se image ka path
+        url: "/imgs/favicon.ico",
         width: 1200,
         height: 630,
         alt: "Rohit Kumar Portfolio Banner",
@@ -39,11 +59,13 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rohit Kumar | Web Developer",
-    description: "Specializing in front-end development and responsive web design.",
-    images: ["/imgs/favicon.jpg"], // Public folder se image ka path
+    title: "Rohit Kumar | Expert Front-End Web Developer",
+    description:
+      "Skilled front-end developer focused on creating responsive, user-friendly websites using React, JavaScript, and modern web standards.",
+    images: ["/imgs/favicon.ico"],
   },
 };
+
 
 
 export default function RootLayout({ children }) {

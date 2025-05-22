@@ -52,6 +52,11 @@ const SectionTitle = styled.h2`
 const SectionItem = styled.h2`
   margin: 5px 0;
   color: #f8f9fa;
+  cursor:pointer;
+  transition:all 0.3s ease-in-out;
+  &:hover{
+    color: #ffcc70;
+  }
 `;
 
 const FooterBottom = styled.div`
@@ -100,10 +105,11 @@ const FooterPage = () => {
         </Section>
         <Section>
           <SectionTitle>Services</SectionTitle>
-          <SectionItem>Web Development</SectionItem>
-          <SectionItem>UI/UX Design</SectionItem>
-          <SectionItem>React Web Apps</SectionItem>
-          <SectionItem>Nex`t.js</SectionItem>
+          <SectionItem><Link href="/#web">Web Development</Link></SectionItem>
+          <SectionItem><Link href="/#social">Social Media Ads Campaigns</Link></SectionItem>
+          <SectionItem><Link href="/#fb">Facebook & Instagram Management</Link></SectionItem>
+          <SectionItem><Link href="/#excel">Excel Data Management</Link></SectionItem>
+          <SectionItem><Link href="/#email">Email Scraping</Link></SectionItem>
         </Section>
         <Section>
           <SectionTitle>Contact Info</SectionTitle>
@@ -123,7 +129,7 @@ const FooterPage = () => {
             <FaCoffee />
           </IconContainer>
         </FooterText>
-        <FooterText>© 2025 rohit kumar 960. All rights reserved. Developed by rohit kumar 960</FooterText>
+        <FooterText>© 2025 rk960. All rights reserved. Developed by rk96x0</FooterText>
        
       </FooterBottom>
     </FooterContainer>

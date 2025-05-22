@@ -1,42 +1,54 @@
 export const metadata = {
-  title: "Projects Page | Front-End Web Developer",
+  title: "My Projects | Front-End Portfolio by Rohit Kumar",
   description:
-    "Hey there! I'm Rohit, a passionate web developer specializing in front-end development...",
+    "Explore a curated collection of front-end web development projects by Rohit Kumar (rk960 / rk96x0). Each project showcases responsive design, modern UI/UX practices, and advanced JavaScript, React, and CSS skills.",
   keywords: [
-    "Web Developer",
-    "Front-End Developer",
-    "UI/UX",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "React",
-    "Responsive Design",
+    "Front-End Projects",
+    "Web Developer Portfolio",
+    "JavaScript Projects",
+    "React Projects",
+    "HTML CSS Projects",
+    "Responsive Web Design",
+    "UI/UX Case Studies",
+    "rk960",
+    "rk96x0",
+    "rk960 portfolio",
+    "rk96x0 portfolio",
+    "rk96x0 Instagram profile",
+    "Rohit Kumar projects",
+    "Frontend Developer Projects"
   ],
-  authors: [{ name: "Rohit Kumar" }],
+  authors: [
+    { name: "Rohit Kumar" },
+    { name: "rk960" },
+    { name: "rk96x0" }
+  ],
   creator: "Rohit Kumar",
   openGraph: {
-    title: "Projects Page | Front-End Web Developer",
+    title: "My Projects | Front-End Portfolio by Rohit Kumar",
     description:
-      "Passionate web developer with expertise in front-end technologies. Let's collaborate to bring your vision to life!",
+      "Showcasing real-world web development projects using React, JavaScript, HTML, and CSS. Built by Rohit Kumar (rk960 / rk96x0).",
     url: "https://rk9600.github.io/rk960/",
     siteName: "Rohit Kumar Portfolio",
     images: [
       {
-        url: "/imgs/favicon.jpg",
+        url: "/imgs/favicon.ico",
         width: 1200,
         height: 630,
-        alt: "Rohit Kumar Portfolio Banner",
+        alt: "Rohit Kumar Portfolio Projects Banner",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Projects Page | Front-End Web Developer",
-    description: "Specializing in front-end development and responsive web design.",
-    images: ["/imgs/favicon.jpg"],
+    title: "My Projects | Front-End Portfolio by Rohit Kumar",
+    description:
+      "Explore featured front-end projects crafted using React, CSS, and modern web technologies by Rohit Kumar.",
+    images: ["/imgs/favicon.ico"],
   },
 };
+
 
 import ProjectShowcase from "./ProjectShow"
 import  PosterPost from "./posterPost"

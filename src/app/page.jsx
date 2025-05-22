@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import styled from "styled-components"
 import {motion} from 'framer-motion'
+import Image from 'next/image';
 import AboutPage from './about/aboutPage'
 import ProjectShowcase from './projects/ProjectShow'
 import PosterPost from './projects/posterPost'
@@ -25,7 +26,7 @@ const page = () => {
     <motion.div
     initial={{opacity:0,scale:0.5}}
     animate={{opacity:1,scale:1}}
-    transition={{duration:1}}
+    transition={{duration:0.01}}
     whileInView={{scale:1}}
     >
       <LandingContent>
@@ -33,7 +34,7 @@ const page = () => {
           <motion.h1
           initial={{opacity:0,scale:0.5}}
           animate={{opacity:1,scale:1}}
-          transition={{duration:1}}
+          transition={{duration:0.01}}
           whileInView={{scale:1}}
           >
             Transforming Ideas into Stunning
@@ -58,12 +59,19 @@ const page = () => {
           </span>
         </LandingText>
         <LandingImage>
-          <motion.img
-          initial={{opacity:0,scale:0.5}}
-          animate={{opacity:1,scale:1}}
-          transition={{duration:1}}
-          whileInView={{scale:1}}
-          src={`./imgs/pic0${randomePic()}.png`} alt={`./imgs/pic0${randomePic()}.png`} />
+        <MotionImage
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.01 }}
+    whileInView={{ scale: 1 }}
+    src={`/imgs/pic0${randomePic()}.png`}
+    alt={`Random image pic0${randomePic()}`}
+    width={800}       // Replace with your actual image width
+    height={600}      // Replace with your actual image height
+    priority          // For faster load (above-the-fold)
+    placeholder="blur"
+    blurDataURL="/imgs/pic01.png" // Optional low-quality placeholder
+  />
           <span></span>
         </LandingImage>
       </LandingContent>
@@ -74,7 +82,7 @@ const page = () => {
     <Contact/>
     <motion.div 
     initial={{opacity:0,x:-200}}
-    transition={{duration:1}}
+    transition={{duration:0.01}}
     animate={{opacity:1,x:0}}
     whileInView={{opacity:1,x:0}}
     >
@@ -133,7 +141,7 @@ align-items:flex-start;
     font-size:1.2rem;
   span{
   font-weight:bold;
-    color:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255},0.5);
+    color:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255});
   }
   }
   button{
@@ -148,11 +156,11 @@ align-items:flex-start;
     transition: all 0.3s ease;
     span{
     font-weight:bold;
-      color:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255},0.5);
+      color:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255},1);
     }
   }
   button:hover{
-  background:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255},0.2);
+  background:rgba(${()=>Math.random() * 200},${()=>Math.random() * 200},${()=>Math.random() * 200},0.4);
   box-shadow:0 0 10px #ccc;
   font-weight:bold;
   transition: all 0.3s ease;
@@ -207,3 +215,5 @@ img{
   }
 }
 `
+const MotionImage = motion(Image);
+

@@ -1,33 +1,55 @@
 export async function generateMetadata() {
-    return {
-      title: "About of me | Front-End Web Developer",
-      description: "Hey there! I'm Rohit, a passionate web developer specializing in front-end development. With 3 years of experience, I craft elegant, responsive, and efficient websites. Let's build something amazing together!",
-      keywords: ["Web Developer", "Front-End Developer", "UI/UX", "JavaScript", "HTML", "CSS", "React", "Responsive Design"],
-      authors: [{ name: "Rohit Kumar" }],
-      creator: "Rohit Kumar",
-      openGraph: {
-        title: "About of me | Front-End Web Developer",
-        description: "Passionate web developer with expertise in front-end technologies. Let's collaborate to bring your vision to life!",
-        url: "https://rk9600.github.io/rk960/",
-        siteName: "Rohit Kumar Portfolio",
-        images: [
-          {
-            url: "/imgs/favicon.jpg", // Public folder se image ka path
-            width: 1200,
-            height: 630,
-            alt: "Rohit Kumar Portfolio Banner",
-          },
-        ],
-        type: "website",
-      },
-      twitter: {
-        card: "summary_large_image",
-        title: "Rohit Kumar | Web Developer",
-        description: "Specializing in front-end development and responsive web design.",
-        images: ["/imgs/favicon.jpg"], // Public folder se image ka path
-      },
-    };
+  return {
+    title: "About Me | Front-End Web Developer",
+    description:
+      "Hey there! I'm Rohit, a passionate web developer specializing in front-end development. With 3 years of experience, I craft elegant, responsive, and efficient websites. Let's build something amazing together!",
+    keywords: [
+      "Web Developer",
+      "Front-End Developer",
+      "UI/UX",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "React",
+      "Responsive Design",
+      "rk960",
+      "rk96x0",
+      "rk960 portfolio",
+      "rk96x0 portfolio",
+      "rk96x0 Instagram profile"
+    ],
+    authors: [
+      { name: "Rohit Kumar" },
+      { name: "rk960" },   
+      { name: "rk96x0" }  
+    ],
+    creator: "Rohit Kumar",
+    openGraph: {
+      title: "About Me | Front-End Web Developer",
+      description:
+        "A passionate web developer with expertise in front-end technologies. Let's collaborate to bring your vision to life!",
+      url: "https://rk9600.github.io/rk960/",
+      siteName: "Rohit Kumar Portfolio",
+      images: [
+        {
+          url: "/imgs/favicon.ico",
+          width: 1200,
+          height: 630,
+          alt: "Rohit Kumar Portfolio Banner",
+        },
+      ],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Rohit Kumar | Web Developer",
+      description:
+        "Specializing in front-end development and responsive web design.",
+      images: ["/imgs/favicon.ico"],
+    },
+  };
 }
+
 
 
 import React from 'react'
@@ -40,10 +62,10 @@ import PosterPost from '../projects/posterPost'
 const page = () => {
   return (
     <>
-    <AboutPage/>
-    <Education/>
-    <ProjectShowcase/>
-    <PosterPost/>
+    <AboutPage id="about"/>
+    <Education id="education"/>
+    <ProjectShowcase id="projects"/>
+    <PosterPost id="poster"/>
     </>
   )
 }

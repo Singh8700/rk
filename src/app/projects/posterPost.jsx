@@ -3,7 +3,14 @@ import styled from "styled-components";
 import {motion} from "framer-motion"
 // Styled Components for Responsive UI
 const Container = styled.div`
-  padding: 40px;
+// background:red;
+padding:40px;
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+flex-wrap:wrap;
   margin-bottom: 10%;
   overflow-x: hidden;
   @media (max-width: 990px) {
@@ -18,7 +25,7 @@ const Title = styled.h2`
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: rgba(${() => Math.random() * 255}, ${() => Math.random() * 255}, ${() => Math.random() * 255},0.3);
+  color: rgba(${() => Math.random() * 200}, ${() => Math.random() * 200}, ${() => Math.random() * 200},0.9);
 font-weight:bold;
 font-family:'times new roman';
   @media (max-width: 768px) {
@@ -26,29 +33,28 @@ font-family:'times new roman';
   }
 `;
 
+
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  @media(max-width: 768px){
+  @media(max-width: 1080px){
+    grid-template-columns: 1fr 1fr;
+  }
+     @media(max-width: 768px){
     grid-template-columns: 1fr 1fr;
   }
     @media(max-width: 660px){
       grid-template-columns: 1fr;
     }
 `;
-
 const Card = styled.div`
   background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-wrap:wrap;
   transition: transform 0.3s, box-shadow 0.3s;
 
   &:hover {

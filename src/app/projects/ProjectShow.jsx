@@ -18,7 +18,7 @@ const Title = styled.h2`
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: rgba(${() => Math.random() * 255}, ${() => Math.random() * 255}, ${() => Math.random() * 255},0.9);
+  color: rgba(${() => Math.random() * 180}, ${() => Math.random() * 180}, ${() => Math.random() * 180},0.9);
 font-weight:bold;
 font-family:'times new roman';
   @media (max-width: 768px) {
@@ -33,7 +33,7 @@ const Grid = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   @media(max-width: 1080px){
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
      @media(max-width: 768px){
     grid-template-columns: 1fr 1fr;

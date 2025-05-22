@@ -71,7 +71,7 @@ const NavSection = styled.nav`
     border-radius: 25px;
     width: 500px;
     height: 75px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(${()=>Math.random() * 150},${()=>Math.random() * 150},${()=>Math.random() * 150},0.8);
     backdrop-filter: blur(10px);
     color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -151,7 +151,7 @@ const Li = styled.li`
             background: rgba(${()=>  Math.random() * 255},${()=>  Math.random() * 255},${()=>  Math.random() * 255},${()=>  Math.random() * 0.9});
             color: balck;
             display: flex;
-            font-size: 25px;
+            font-size: 12px;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -177,7 +177,7 @@ const Li = styled.li`
             text-align: center;
             margin-top: -15px;
             transform: translate(0px, 20px);
-
+            font-size: 15px;
             &::after {
                 content: "";
                 position: absolute;
@@ -197,7 +197,7 @@ const Li = styled.li`
             transform: translate(0px, -10px);
             position: relative;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 18px;
             transition: all 0.3s ease-in-out;
 
             &::after {

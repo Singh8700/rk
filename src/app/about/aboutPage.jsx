@@ -111,7 +111,7 @@ const ContantSection = styled.div`
     font-size:2.5rem;
     color:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255},0.8);
     font-weight:bold;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+   
     font-family:'times new roman';
   }
   p{

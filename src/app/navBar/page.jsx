@@ -34,7 +34,7 @@ const NavbarSection = () => {
                 {navText.map((text, index) => (
                     <Li key={index}>
                         <Eleme>
-                        <Link href={text.path}>
+                        <Link href={text.path} to={text.path}>
                         <span 
                             className={`
                             ${pathname === text.path ? "active" : ""}

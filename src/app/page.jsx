@@ -18,6 +18,8 @@ const page = () => {
 
   console.log(randomePic())
 
+  const basePath = "/rk960";
+
   return (
    <Wrapper>
     {/* heading content */}
@@ -60,18 +62,18 @@ const page = () => {
         </LandingText>
         <LandingImage>
         <MotionImage
-    initial={{ opacity: 0, scale: 0.5 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.01 }}
-    whileInView={{ scale: 1 }}
-    src={`/imgs/pic0${randomePic()}.png`}
-    alt={`Random image pic0${randomePic()}`}
-    width={800}       // Replace with your actual image width
-    height={600}      // Replace with your actual image height
-    priority          // For faster load (above-the-fold)
-    placeholder="blur"
-    blurDataURL="/imgs/pic01.png" // Optional low-quality placeholder
-  />
+  initial={{ opacity: 0, scale: 0.5 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.01 }}
+  whileInView={{ scale: 1 }}
+  src={`${basePath}/imgs/pic0${randomePic()}.png`}
+  alt={`Random image pic0${randomePic()}`}
+  width={800}
+  height={600}
+  priority
+  placeholder="blur"
+  blurDataURL={`${basePath}/imgs/pic01.png`}
+/>
           <span></span>
         </LandingImage>
       </LandingContent>
@@ -187,6 +189,7 @@ align-items:flex-start;
     }
   }
 `
+const MotionImage = motion(Image);
 
 const LandingImage = styled.div`
 width:350px;
@@ -215,5 +218,5 @@ img{
   }
 }
 `
-const MotionImage = motion(Image);
+
 

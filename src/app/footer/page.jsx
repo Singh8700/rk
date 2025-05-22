@@ -105,11 +105,11 @@ const FooterPage = () => {
         </Section>
         <Section>
           <SectionTitle>Services</SectionTitle>
-          <SectionItem><Link href="/#web">Web Development</Link></SectionItem>
-          <SectionItem><Link href="/#social">Social Media Ads Campaigns</Link></SectionItem>
-          <SectionItem><Link href="/#fb">Facebook & Instagram Management</Link></SectionItem>
-          <SectionItem><Link href="/#excel">Excel Data Management</Link></SectionItem>
-          <SectionItem><Link href="/#email">Email Scraping</Link></SectionItem>
+          <SectionItem><Link href="#web">Web Development</Link></SectionItem>
+          <SectionItem><Link href="#social">Social Media Ads Campaigns</Link></SectionItem>
+          <SectionItem><Link href="#fb">Facebook & Instagram Management</Link></SectionItem>
+          <SectionItem><Link href="#excel">Excel Data Management</Link></SectionItem>
+          <SectionItem><Link href="#email">Email Scraping</Link></SectionItem>
         </Section>
         <Section>
           <SectionTitle>Contact Info</SectionTitle>

@@ -1,7 +1,7 @@
 import ContactPage from "./contact"; // This can be a client component
 
 export const metadata = {
-  title: "Contact | Rohit Kumar - Front-End Web Developer",
+  title: "Contact Me | Rohit Kumar - Front-End Web Developer",
   description:
     "Get in touch with Rohit Kumar, a dedicated front-end web developer. Whether you have a project, opportunity, or just want to say hello — let’s connect!",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata = {
   authors: [{ name: "Rohit Kumar" }],
   creator: "Rohit Kumar",
   openGraph: {
-    title: "Contact | Rohit Kumar - Front-End Developer",
+    title: "Contact Me | Rohit Kumar - Front-End Developer",
     description:
       "Reach out to Rohit Kumar, a passionate front-end developer. Collaborate on exciting projects or inquire about development services.",
     url: "https://rk9600.github.io/rk960/contact",
@@ -36,7 +36,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact | Rohit Kumar - Front-End Developer",
+    title: "Contact Me | Rohit Kumar - Front-End Developer",
     description:
       "Want to collaborate or have a question? Contact Rohit Kumar, front-end specialist.",
     images: ["/imgs/favicon.jpg"],

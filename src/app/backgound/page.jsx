@@ -21,15 +21,15 @@ const Page = () => {
 
   return (
     <Wrapper>
-      {divs.map((div) => (
+      {divs.map((item) => (
         <StyledDiv
-          key={div.id}
-          size={div.size}
-          borderRadius={div.borderRadius}
-          blur={div.blur}
-          duration={div.duration}
-          delay={div.delay}
-          animationName={div.animationName}
+          key={item.id}
+          size={item.size}
+          borderRadius={item.borderRadius}
+          blur={item.blur}
+          duration={item.duration}
+          delay={item.delay}
+          animationName={item.animationName}
         />
       ))}
     </Wrapper>

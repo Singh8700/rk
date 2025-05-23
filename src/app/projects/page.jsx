@@ -40,13 +40,7 @@ export const metadata = {
     ],
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "My Projects | Front-End Portfolio by Rohit Kumar",
-    description:
-      "Explore featured front-end projects crafted using React, CSS, and modern web technologies by Rohit Kumar.",
-    images: ["/imgs/favicon.ico"],
-  },
+  
 };
 
 

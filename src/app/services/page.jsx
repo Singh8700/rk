@@ -33,12 +33,7 @@ export const metadata = {
     ],
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Services Page | Front-End Web Developer",
-    description: "Specializing in front-end development and responsive web design.",
-    images: ["/imgs/favicon.jpg"],
-  },
+  
 };
 
 export default function Page() {

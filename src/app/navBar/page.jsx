@@ -33,8 +33,7 @@ const NavbarSection = () => {
             <ListContent>
                 {navText.map((text, index) => (
                     <Li key={index}>
-                        <Eleme>
-                        <Link href={text.path} to={text.path}>
+                        <StyleLink href={text.path} to={text.path}>
                         <span 
                             className={`
                             ${pathname === text.path ? "active" : ""}
@@ -43,8 +42,8 @@ const NavbarSection = () => {
                             className={`
                             ${pathname === text.path ? "textActive" : ""}  
                         text`}>{text.title}</span>
-                        </Link>
-                        </Eleme>
+                        </StyleLink>
+                       
                     </Li>
                 ))}
             </ListContent>
@@ -97,7 +96,20 @@ const Li = styled.li`
     position: relative;
     // overflow-x: hidden;
     transition: all 0.3s ease-in-out;
-    a{
+`
+// const Eleme = styled.a`
+//         position: relative;
+//         z-index: 1;
+//         bottom: 0;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex-direction: column;
+//         margin: auto;
+        
+//     }`
+
+const StyleLink = styled(Link)`
         width: 100%;
         position: relative;
         z-index: 99;
@@ -215,16 +227,5 @@ const Li = styled.li`
                 transition: transform 0.3s ease-in-out;
             }
         }
-    }
-`
-const Eleme = styled.a`
-        position: relative;
-        z-index: 1;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: auto;
-        
-    }`
+    
+        `

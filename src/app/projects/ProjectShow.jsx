@@ -212,7 +212,7 @@ export default function ProjectShowcase(props) {
       <Grid>
         {props.showOnly > 0 ? (
           projects.slice(0, props.showOnly).map((project) => (
-            <motion.div 
+            <motion.div  key={project.id}
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5}}
@@ -233,7 +233,7 @@ export default function ProjectShowcase(props) {
           ))
         ) : (
           projects.map((project) => (
-            <motion.div 
+            <motion.div  key={project.id}
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5}}

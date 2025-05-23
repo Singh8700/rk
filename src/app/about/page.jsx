@@ -40,13 +40,6 @@ export async function generateMetadata() {
       ],
       type: "website",
     },
-    twitter: {
-      card: "summary_large_image",
-      title: "Rohit Kumar | Web Developer",
-      description:
-        "Specializing in front-end development and responsive web design.",
-      images: ["/imgs/favicon.ico"],
-    },
   };
 }
 

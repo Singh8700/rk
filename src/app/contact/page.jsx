@@ -34,13 +34,6 @@ export const metadata = {
     ],
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Contact Me | Rohit Kumar - Front-End Developer",
-    description:
-      "Want to collaborate or have a question? Contact Rohit Kumar, front-end specialist.",
-    images: ["/imgs/favicon.jpg"],
-  },
 };
 
 

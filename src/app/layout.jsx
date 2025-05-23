@@ -1,8 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Background from "./backgound/page"
-import NavBar from "./navBar/page"
-import HeaderSection from "./headerSection/page"
+import Container from "./Container"
 import FooterPage from "./footer/page"
 
 
@@ -57,13 +56,7 @@ export const metadata = {
     ],
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Rohit Kumar | Expert Front-End Web Developer",
-    description:
-      "Skilled front-end developer focused on creating responsive, user-friendly websites using React, JavaScript, and modern web standards.",
-    images: ["/imgs/favicon.ico"],
-  },
+
 };
 
 
@@ -80,8 +73,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-       <HeaderSection/>
-        <NavBar/>
+        <Container/>
         <Background/>
         {children}
         <FooterPage/>

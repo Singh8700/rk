@@ -64,7 +64,7 @@ const page = () => {
         <MotionImage
   initial={{ opacity: 0, scale: 0.5 }}
   animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.01 }}
+  transition={{ duration: 0.0001 }}
   whileInView={{ scale: 1 }}
   src={`${basePath}/imgs/pic0${randomePic()}.png`}
   alt={`Random image pic0${randomePic()}`}
@@ -158,11 +158,10 @@ align-items:flex-start;
     transition: all 0.3s ease;
     span{
     font-weight:bold;
-      color:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255},1);
+      color:rgb(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255});
     }
   }
   button:hover{
-  background:rgba(${()=>Math.random() * 200},${()=>Math.random() * 200},${()=>Math.random() * 200},0.4);
   box-shadow:0 0 10px #ccc;
   font-weight:bold;
   transition: all 0.3s ease;

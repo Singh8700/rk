@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { FaHeart, FaCoffee } from "react-icons/fa";
 import Link from "next/link";
+import {usePathname } from 'next/navigation';
 
 const FooterContainer = styled(motion.footer)`
   width: 100%;
@@ -47,6 +48,7 @@ const SectionTitle = styled.h2`
   margin-bottom: 15px;
   font-size:1.5rem;
   color: rgb(${()=>  Math.random() * 255},${()=>  Math.random() * 255},${()=>  Math.random() * 255});
+font-family:papyrus;
 `;
 
 const SectionItem = styled.h2`
@@ -54,6 +56,7 @@ const SectionItem = styled.h2`
   color: #f8f9fa;
   cursor:pointer;
   transition:all 0.3s ease-in-out;
+  font-family:papyrus;
   &:hover{
     color: #ffcc70;
   }
@@ -77,6 +80,7 @@ const FooterText = styled.h1`
   color: #f8f9fa;
   font-size:0.7rem;
   break-word:break-all;
+font-family:"Poppins";
 `;
 
 const IconContainer = styled.span`
@@ -85,6 +89,7 @@ const IconContainer = styled.span`
 `;
 
 const FooterPage = () => {
+  const pathname = usePathname()
   return (
     <FooterContainer
       initial={{ opacity: 0 }}
@@ -105,11 +110,13 @@ const FooterPage = () => {
         </Section>
         <Section>
           <SectionTitle>Services</SectionTitle>
-          <SectionItem><Link href="#web">Web Development</Link></SectionItem>
-          <SectionItem><Link href="#social">Social Media Ads Campaigns</Link></SectionItem>
-          <SectionItem><Link href="#fb">Facebook & Instagram Management</Link></SectionItem>
-          <SectionItem><Link href="#excel">Excel Data Management</Link></SectionItem>
-          <SectionItem><Link href="#email">Email Scraping</Link></SectionItem>
+          <SectionItem><Link href={pathname === "/services" ? "#excelDataManagement" : "/services#excelDataManagement"}>Excel Data Management</Link></SectionItem>
+          <SectionItem><Link href={pathname === "/services" ? "#emailScraping" : "/services#emailScraping"}>Email Scraping</Link></SectionItem>
+          <SectionItem><Link href={pathname ===  "/services" ? "#socialMediaAdsCampaigns" : "/services#socialMediaAdsCampaigns"}>Social Media Ads Campaigns</Link></SectionItem>
+          <SectionItem><Link href={pathname === "/services" ? "#fbManagement" : "/services#fbManagement"}>Fb & Instagram Management</Link></SectionItem>
+          <SectionItem><Link href={pathname === "/services" ? "#webDesign" : "/services#webDesign"}>Web Design</Link></SectionItem>
+          <SectionItem><Link href={pathname === "/services" ? "#webDevelopment" : "/services#webDevelopment"}>Web Development</Link></SectionItem>
+         
         </Section>
         <Section>
           <SectionTitle>Contact Info</SectionTitle>

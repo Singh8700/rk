@@ -13,6 +13,7 @@ flex-direction:column;
 flex-wrap:wrap;
   margin-bottom: 10%;
   overflow-x: hidden;
+  font-family:papyrus;
   @media (max-width: 990px) {
       margin-bottom: 18%;
   }
@@ -27,7 +28,7 @@ const Title = styled.h2`
   margin-bottom: 30px;
   color: rgba(${() => Math.random() * 200}, ${() => Math.random() * 200}, ${() => Math.random() * 200},0.9);
 font-weight:bold;
-font-family:'times new roman';
+
   @media (max-width: 768px) {
     font-size: 2rem;
   }
@@ -116,7 +117,7 @@ const Description = styled.p`
   font-size: 1rem;
   color: #666;
   line-height: 1.5;
-
+font-family:'Poppins';
   @media (max-width: 768px) {
     font-size: 0.9rem;
   }

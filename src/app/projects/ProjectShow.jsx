@@ -6,6 +6,7 @@ const Container = styled.div`
   padding: 40px;
   margin-bottom: 10%;
   overflow-x: hidden;
+font-family:papyrus;
   @media (max-width: 990px) {
       margin-bottom: 18%;
   }
@@ -20,7 +21,6 @@ const Title = styled.h2`
   margin-bottom: 30px;
   color: rgba(${() => Math.random() * 180}, ${() => Math.random() * 180}, ${() => Math.random() * 180},0.9);
 font-weight:bold;
-font-family:'times new roman';
   @media (max-width: 768px) {
     font-size: 2rem;
   }
@@ -101,7 +101,7 @@ const Description = styled.p`
   font-size: 1rem;
   color: #666;
   line-height: 1.5;
-
+font-family:'Poppins';
   @media (max-width: 768px) {
     font-size: 0.9rem;
   }
@@ -215,7 +215,7 @@ export default function ProjectShowcase(props) {
             <motion.div  key={project.id}
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5}}
+            transition={{ duration: 0.001}}
             >
               <Card key={project.id}>
               <IframeWrapper>
@@ -236,7 +236,7 @@ export default function ProjectShowcase(props) {
             <motion.div  key={project.id}
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5}}
+            transition={{ duration: 0.001}}
             >
             <Card key={project.id}>
               <IframeWrapper>

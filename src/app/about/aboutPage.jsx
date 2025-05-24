@@ -34,19 +34,19 @@ const page = () => {
       initial={{opacity:0,scale:0.2}}
       whileInView={{opacity:1,scale:1}}
       animate={{opacity:1,scale:1}}
-      transition={{duration:1}}>
+      transition={{duration:0.005}}>
       <ContantSection>
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.005 }}
         >
           About us
-        </motion.h2>
+        </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.005 }}
         >
           Hey there! I'm Rohit Kumar, a passionate web developer with a knack for crafting elegant and responsive websites. With 3 years of experience in the field, I specialize in front-end development, bringing designs to life through clean and efficient code. I'm always seeking new challenges and learning new technologies to stay ahead in the rapidly evolving web development landscape. If you're looking for a dedicated and skilled web developer, look no further – let's create something amazing together!
         </motion.p>
@@ -55,7 +55,7 @@ const page = () => {
             className="skillContainer"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.005 }}
           >
             {skills.map((skill, index) => (
               <motion.div
@@ -65,7 +65,7 @@ const page = () => {
                 <motion.h3
                   initial={{ opacity: 0 ,y:-100}}
                   animate={{opacity:1,y:0}}
-                  transition={{ duration: 1 , delay: index * 0.3 }}
+                  transition={{ duration: 0.001 , delay: index * 0.003 }}
                   whileInView={{opacity:1,y:0}}
                 >
                   {skill.skill}
@@ -107,12 +107,10 @@ const ContantSection = styled.div`
   box-shadow:2px 5px 10px 0px rgba(255,255,255,0.75), inset 0px 0px 0px 1px rgba(255,255,255,0.75);
   -webkit-box-shadow:2px 5px 10px 0px rgba(255,255,255,0.75), inset 0px 0px 0px 1px rgba(255,255,255,0.75);
   -moz-box-shadow:2px 5px 10px 0px rgba(255,255,255,0.75), inset 0px 0px 0px 1px rgba(255,255,255,0.75);
-  h2{
+  h1{
     font-size:2.5rem;
     color:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255},0.8);
     font-weight:bold;
-   
-    font-family:'times new roman';
   }
   p{
     padding:0rem 2rem 0;
@@ -161,7 +159,7 @@ display:flex;
   padding:10px;
   border-radius:5px;
   font-weight:bold;
-  font-family:'times new roman';
+
  }
  }
 }

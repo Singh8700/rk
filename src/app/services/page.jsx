@@ -1,7 +1,7 @@
 import Services from "./service"; // This can be a client component
 
 export const metadata = {
-  title: "Services Page | Front-End Web Developer",
+  title: "My Services| Front-End Web Developer",
   description:
     "Hey there! I'm Rohit, a passionate web developer specializing in front-end development...",
   keywords: [
@@ -18,7 +18,7 @@ export const metadata = {
   authors: [{ name: "Rohit Kumar" }],
   creator: "Rohit Kumar",
   openGraph: {
-    title: "Services Page | Front-End Web Developer",
+    title: "My Services | Front-End Web Developer",
     description:
       "Passionate web developer with expertise in front-end technologies. Let's collaborate to bring your vision to life!",
     url: "https://rk9600.github.io/rk960/",

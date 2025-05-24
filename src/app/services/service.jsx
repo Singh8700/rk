@@ -15,7 +15,7 @@ const ServicesContainer = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   padding: 80px 20px;
-  font-family: 'Poppins';
+  font-family: papyrus;
 `;
 
 const Title = styled.h1`
@@ -63,6 +63,7 @@ const ServiceDesc = styled.p`
   font-size: 0.9rem;
   color: #d1d1d1;
   margin-bottom: 10px;
+  font-family:'Poppins';
 `;
 
 const WhatsappLink = styled.a`
@@ -82,23 +83,23 @@ const WhatsappLink = styled.a`
 
 const servicesData = [
   { icon: <FaLaptopCode />, title: "Web Design", desc: "Stand out online with stunning, high-converting web designs tailored for success!", link: "https://wa.me/918700750589",
-  showCase:"web"
+  showCase:"webDesign"
    },
   { icon: <FaBullhorn />, title: "Social Media Ads Campaigns", desc: "Maximize your reach with powerful, data-driven social media ad strategies!", link: "https://wa.me/918700750589",
-  showCase:"social"
+  showCase:"socialMediaAdsCampaigns"
    },
   { icon: <FaChartLine />, title: "Facebook & Instagram Management", desc: "Dominate social media with engaging content and strategic growth management!", link: "https://wa.me/918700750589",
-    showCase:"fb"
+    showCase:"fb Management"
    },
   { icon: <FaDatabase />, title: "Web Development", desc: "Transform ideas into high-performance, feature-rich web applications!", link: "https://wa.me/918700750589",
-    showCase:"web"
+    showCase:"webDevelopment"
    },
   { icon: <FaEnvelopeOpenText />, title: "E-mail Scraping", desc: "Unlock potential leads with precision-targeted email data extraction!", link: "https://wa.me/918700750589",
-    showCase:"email"
+    showCase:"emailScraping"
 
    },
   { icon: <FaFileExcel />, title: "Excel Data Management", desc: "Optimize your workflow with structured, automated Excel data solutions!", link: "https://wa.me/918700750589",
-    showCase:"excel"
+    showCase:"excelDataManagement"
 
    }
 ];

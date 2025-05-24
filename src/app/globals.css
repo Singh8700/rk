@@ -26,4 +26,9 @@ html,body {
   flex-wrap: wrap;
   scroll-behavior: smooth;
   text-shadow: none;
+  
+}
+
+html > * h1,body > * h1{
+  font-family: papyrus;
 }

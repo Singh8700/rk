@@ -75,7 +75,7 @@ const NavSection = styled.nav`
     color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     @media(max-width:780px){
-    width:400px;
+    width:360px;
     padding: 0 10px;
     }
 `
@@ -91,7 +91,7 @@ const Li = styled.li`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 18%;
+    width: 15%;
     // background: red;
     position: relative;
     // overflow-x: hidden;
@@ -110,7 +110,7 @@ const Li = styled.li`
 //     }`
 
 const StyleLink = styled(Link)`
-        width: 100%;
+        width: 80%;
         position: relative;
         z-index: 99;
         bottom: 0;
@@ -120,8 +120,8 @@ const StyleLink = styled(Link)`
         flex-direction: column;
         margin: auto;
         .icon {
-            width: 30px;
-            height: 30px;
+            width: 35px;
+            height: 35px;
             border-radius: 50%;
             color: var(--foreground);
             text-align: center;
@@ -136,13 +136,16 @@ const StyleLink = styled(Link)`
             svg {
                 position: relative;
                 z-index: 2;
+                font-size:15px;
+                transition:all linear 0.2s;
+                
             }
 
             &::after {
                 content: "";
                 position: absolute;
-                width: 75%;
-                height: 75%;
+                width: 80%;
+                height: 80%;
                 top: 50%;
                 left: 50%;
                 opacity: 0;
@@ -156,8 +159,8 @@ const StyleLink = styled(Link)`
         }
 
         .active {
-            width: 45px;
-            height: 45px;
+            width: 50px;
+            height: 50px;
             color: var(--background);
             opacity: 1;
             background: rgba(${()=>  Math.random() * 255},${()=>  Math.random() * 255},${()=>  Math.random() * 255},${()=>  Math.random() * 0.9});
@@ -171,10 +174,16 @@ const StyleLink = styled(Link)`
             overflow: hidden;
             position: relative;
             z-index: 9;
+            left:50%;
             box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
-            transform: translate(0px, -30px);
+            transform: translate(-30%, -30px);
+            text-shadow:1px 1px 5px #000;
             transition: transform 0.3s linear;
-
+            svg{
+            font-size:25px;
+            color:rgba(${()=>Math.random() * 150},${()=>Math.random() * 150},${()=>Math.random() * 150},0.8);
+            
+            }
             &::after {
                 opacity: 1;
             }
@@ -189,7 +198,7 @@ const StyleLink = styled(Link)`
             text-align: center;
             margin-top: -15px;
             transform: translate(0px, 20px);
-            font-size: 15px;
+            font-size: 12px;
             &::after {
                 content: "";
                 position: absolute;
@@ -209,9 +218,11 @@ const StyleLink = styled(Link)`
             transform: translate(0px, -10px);
             position: relative;
             font-weight: 700;
-            font-size: 18px;
+            font-size: 15px;
             transition: all 0.3s ease-in-out;
-
+            text-shadow:1px 1px 5px #000;
+            font-family:Papyrus;
+            padding-left:10px;
             &::after {
                 content: "";
                 position: absolute;
@@ -219,11 +230,11 @@ const StyleLink = styled(Link)`
                 height: 6px;
                 bottom: -40%;
                 border-radius: 50%;
-                background: green;
+                background: rgb(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255});
                 z-index: 0;
-                left: 40%;
+                left: 50%;
                 box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
-                transform: scale(1);
+                transform: scale(1) translate(50%, 0px);
                 transition: transform 0.3s ease-in-out;
             }
         }

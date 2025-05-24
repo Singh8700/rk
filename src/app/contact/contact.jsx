@@ -20,7 +20,7 @@ const Card = styled(motion.div)`
   position:relative;
   z-index:1;
   transition: 0.3s;
-
+font-family:papyrus;
   &:hover {
     transform: scale(1.05);
   }
@@ -30,7 +30,7 @@ const Title = styled.h1`
   font-size: 1.8rem;
   color: #ffcc70;
   font-weight: bold;
-  font-family:'times new roman';
+  font-family:papyrus;
   text-transform: uppercase;
 `;
 
@@ -39,6 +39,7 @@ const Tagline = styled.p`
   font-style: italic;
   color: #f8f9fa;
   max-width: 90%;
+font-family:"Poppins";
 `;
 
 const SocialMediaCard = styled.div`

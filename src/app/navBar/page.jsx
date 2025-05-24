@@ -174,9 +174,8 @@ const StyleLink = styled(Link)`
             overflow: hidden;
             position: relative;
             z-index: 9;
-            left:50%;
             box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
-            transform: translate(-30%, -30px);
+            transform: translate(, -30px);
             text-shadow:1px 1px 5px #000;
             transition: transform 0.3s linear;
             svg{

@@ -15,7 +15,7 @@ const ServicesContainer = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   padding: 80px 20px;
-  font-family: papyrus;
+  font-family: 'Papyrus', 'Comic Sans MS', cursive;
 `;
 
 const Title = styled.h1`

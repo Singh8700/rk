@@ -6,7 +6,7 @@ const Container = styled.div`
   padding: 40px;
   margin-bottom: 10%;
   overflow-x: hidden;
-font-family:papyrus;
+font-family: 'Papyrus', 'Comic Sans MS', cursive;
   @media (max-width: 990px) {
       margin-bottom: 18%;
   }

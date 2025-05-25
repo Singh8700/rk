@@ -135,7 +135,7 @@ align-items:flex-start;
   font-family:'time-new-roman';
   span{
     font-weight:bold;
-    font-family:papyrus;
+    font-family: 'Papyrus', 'Comic Sans MS', cursive;
      color:rgb(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255});
   }
   }
@@ -146,7 +146,7 @@ align-items:flex-start;
   font-weight:bold;
   font-size:1.2rem;
   line-height:-1;
-  font-family:papyrus;
+  font-family: 'Papyrus', 'Comic Sans MS', cursive;
     color:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255});
   }
   }
@@ -159,7 +159,7 @@ align-items:flex-start;
     border-radius:5px;
     font-weight:bold;
     margin:1rem 0rem 0rem 10rem;
-    font-family:papyrus;
+    font-family: 'Papyrus', 'Comic Sans MS', cursive;
     transition: all 0.3s ease;
     span{
     font-weight:bold;

@@ -25,7 +25,7 @@ const Heading = styled.h1`
   display:flex;
   justify-content:flex-end;
   align-items:center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Papyrus', 'Comic Sans MS', cursive;
   // padding-top:10px;
   position:fixed;
   font-weight:bold;

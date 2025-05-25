@@ -175,7 +175,7 @@ const StyleLink = styled(Link)`
             position: relative;
             z-index: 9;
             box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
-            transform: translate(, -30px);
+            transform: translate(0px, -35px);
             text-shadow:1px 1px 5px #000;
             transition: transform 0.3s linear;
             svg{
@@ -220,7 +220,7 @@ const StyleLink = styled(Link)`
             font-size: 15px;
             transition: all 0.3s ease-in-out;
             text-shadow:1px 1px 5px #000;
-            font-family:Papyrus;
+            font-family: 'Papyrus', 'Comic Sans MS', cursive;
             padding-left:10px;
             &::after {
                 content: "";

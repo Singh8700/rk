@@ -17,7 +17,7 @@ const FooterContainer = styled(motion.footer)`
   left: 0;
   font-size: 0.9rem;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Papyrus', 'Comic Sans MS', cursive;
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ const SectionTitle = styled.h2`
   margin-bottom: 15px;
   font-size:1.5rem;
   color: rgb(${()=>  Math.random() * 255},${()=>  Math.random() * 255},${()=>  Math.random() * 255});
-font-family:papyrus;
+font-family:'Papyrus', 'Comic Sans MS', cursive;
 `;
 
 const SectionItem = styled.h2`
@@ -56,7 +56,7 @@ const SectionItem = styled.h2`
   color: #f8f9fa;
   cursor:pointer;
   transition:all 0.3s ease-in-out;
-  font-family:papyrus;
+  font-family:'Papyrus', 'Comic Sans MS', cursive;
   &:hover{
     color: #ffcc70;
   }

@@ -159,8 +159,8 @@ display:flex;
   padding:10px;
   border-radius:5px;
   font-weight:bold;
-
- }
+font-family:'Papyrus', 'Comic Sans MS', cursive;
+ }  
  }
 }
  `

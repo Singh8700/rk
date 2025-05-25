@@ -20,7 +20,7 @@ const Card = styled(motion.div)`
   position:relative;
   z-index:1;
   transition: 0.3s;
-font-family:papyrus;
+font-family:'Papyrus', 'Comic Sans MS', cursive;
   &:hover {
     transform: scale(1.05);
   }
@@ -30,7 +30,7 @@ const Title = styled.h1`
   font-size: 1.8rem;
   color: #ffcc70;
   font-weight: bold;
-  font-family:papyrus;
+  font-family:'Papyrus', 'Comic Sans MS', cursive;
   text-transform: uppercase;
 `;
 

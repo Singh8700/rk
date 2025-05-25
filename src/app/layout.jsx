@@ -68,6 +68,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet"/>
       <meta name="google-site-verification" content="OM6pgVpezoI0qeA94p9M0MhFSu38lv2SWdy0Biu6D1Y" />
       </head>
       <body

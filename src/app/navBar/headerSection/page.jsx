@@ -35,6 +35,7 @@ const Heading = styled.h1`
   backdrop-filter:blur(20px);
   h1{
   padding:0.5rem 1rem;
+  font-family:'Papyrus', 'Comic Sans MS', cursive;
   }
   @media(max-width:660px){
    font-size:2rem

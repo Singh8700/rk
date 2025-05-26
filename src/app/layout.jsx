@@ -3,6 +3,7 @@ import "./globals.css";
 import Background from "./backgound/page"
 import Container from "./Container"
 import FooterPage from "./footer/page"
+import FlotingButton from "./blogs/flotingButton"
 
 
 const geistSans = Geist({
@@ -76,6 +77,7 @@ export default function RootLayout({ children }) {
       >
         <Container/>
         <Background/>
+        <FlotingButton/>
         {children}
         <FooterPage/>
       </body>

@@ -82,7 +82,7 @@ const ContactPage = () => {
         <ContactItem href="https://wa.me/8700750589" target="_blank">
           <FaWhatsapp size={20} /> WhatsApp
         </ContactItem>
-        <ContactItem href="https://instagram.com/rkumarr960" target="_blank">
+        <ContactItem href="https://instagram.com/rk96x0" target="_blank">
           <FaInstagram size={20} /> Instagram
         </ContactItem>
         <ContactItem href="https://www.facebook.com/share/19MnmHEFUV/" target="_blank">

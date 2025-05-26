@@ -30,5 +30,5 @@ html,body {
 }
 
 html > * h1,body > * h1{
-  font-family: papyrus;
+  font-family: 'Papyrus', 'Comic Sans MS', cursive;
 }

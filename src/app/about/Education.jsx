@@ -138,7 +138,7 @@ const Wrapper = styled.div`
 h2{
 font-size:2.5rem;
 font-weight:bold;
-font-family:papyrus;
+font-family: 'Papyrus', 'Comic Sans MS', cursive;
 border-bottom:2px dotted rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255},0.8);
 color:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255},0.8);
 }
@@ -177,7 +177,7 @@ z-index:99;
 .itemYear{
 font-size:0.8rem;
 font-weight:bold;
-font-family:papyrus;
+font-family: 'Papyrus', 'Comic Sans MS', cursive;
 color:#fff;
 margin:0.5rem;
 background:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255},0.8);
@@ -190,7 +190,7 @@ h4{
 font-size:1.3rem;
 line-height:2rem;
 font-weight:bold;
-font-family:papyrus;
+font-family: 'Papyrus', 'Comic Sans MS', cursive;
 color:#fff;
 padding:5px;
 position: relative;

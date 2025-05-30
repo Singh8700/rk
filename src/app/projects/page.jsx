@@ -49,7 +49,7 @@ import  PosterPost from "./posterPost"
 const page = () => {
     return (
       <div style={{"margin-top":"50px"}}>
-        <ProjectShowcase />
+        <ProjectShowcase id="showProjects"/>
         <PosterPost />
       </div>
     )

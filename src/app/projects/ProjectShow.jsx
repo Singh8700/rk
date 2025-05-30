@@ -204,7 +204,7 @@ export default function ProjectShowcase(props) {
   return (
     <motion.div
     initial={{ opacity: 0, y: 50 }}
-    whileInView={{ opacity: 1, y: 0 }}
+    animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
     >
     <Container>
@@ -214,8 +214,9 @@ export default function ProjectShowcase(props) {
           projects.slice(0, props.showOnly).map((project) => (
             <motion.div  key={project.id}
             initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.001}}
+            whileInView={{ opacity: 1, x: 0 }}
             >
               <Card key={project.id}>
               <IframeWrapper>

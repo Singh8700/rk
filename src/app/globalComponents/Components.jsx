@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
 import styled from "styled-components"
-import HeaderSection from "./navBar/headerSection/page"
-import NavBar from "./navBar/page"
+import HeaderSection from "../navBar/headerSection/page"
+import NavBar from "../navBar/page"
 
 const Container = () => {
   return (

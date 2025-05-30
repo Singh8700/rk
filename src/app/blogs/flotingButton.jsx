@@ -33,7 +33,7 @@ display:flex;
 justify-content:flex-end;
 align-items:center;
 position:fixed;
-bottom:5rem;
+bottom:8rem;
 right:10px;
 z-index:99;
 padding:5px;

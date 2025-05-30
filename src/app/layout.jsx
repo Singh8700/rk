@@ -1,10 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Background from "./backgound/page"
-import Container from "./Container"
+import Container from "./globalComponents/Components"
 import FooterPage from "./footer/page"
 import FlotingButton from "./blogs/flotingButton"
-
+import LoadingScreen from "./globalComponents/globalLoader"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -75,6 +75,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <LoadingScreen/>
         <Container/>
         <Background/>
         <FlotingButton/>

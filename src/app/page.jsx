@@ -53,7 +53,7 @@ const page = () => {
           </Link>
           </button>
          <button>
-         <Link href="/about">
+         <Link href="/projects#showProjects">
          View My
          <span> Work</span>
          </Link>

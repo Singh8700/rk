@@ -16,7 +16,7 @@ const page = () => {
     return Math.floor(Math.random() * 2) + 1
   }
 
-  console.log(randomePic())
+  // console.log(randomePic())
 
   const basePath = "/rk960";
 
@@ -28,7 +28,6 @@ const page = () => {
     <motion.div
     initial={{opacity:0,scale:0.5}}
     animate={{opacity:1,scale:1}}
-    transition={{duration:0.01}}
     whileInView={{scale:1}}
     >
       <LandingContent>
@@ -36,7 +35,6 @@ const page = () => {
           <motion.h1
           initial={{opacity:0,scale:0.5}}
           animate={{opacity:1,scale:1}}
-          transition={{duration:0.01}}
           whileInView={{scale:1}}
           >
             Transforming Ideas into Stunning
@@ -64,17 +62,15 @@ const page = () => {
         <MotionImage
   initial={{ opacity: 0, scale: 0.5 }}
   animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.0001 }}
   whileInView={{ scale: 1 }}
-  src={`${basePath}/imgs/pic0${randomePic()}.png`}
-  alt={`Random image pic0${randomePic()}`}
-  width={800}
+  src={`${basePath}/imgs/pic0${randomePic()}.jpg`}
+  alt={`Random image pic0${randomePic()}`}      
+  width={1200}
   height={600}
+  quality={75}
   priority
-  placeholder="blur"
-  blurDataURL={`${basePath}/imgs/pic01.png`}
 />
-          <span></span>
+          
         </LandingImage>
       </LandingContent>
     </motion.div>

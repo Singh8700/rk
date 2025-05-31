@@ -27,7 +27,6 @@ const flotingButton = () => {
 export default flotingButton
 
 const Wrapper = styled.div`
-width:100%;
 height:max-content;
 display:flex;
 justify-content:flex-end;

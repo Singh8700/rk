@@ -1,4 +1,5 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from 'next/font/google';
+
 import "./globals.css";
 import Background from "./backgound/page"
 import Container from "./globalComponents/Components"
@@ -6,15 +7,7 @@ import FooterPage from "./footer/page"
 import FlotingButton from "./blogs/flotingButton"
 import LoadingScreen from "./globalComponents/globalLoader"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ['Papyrus'], display: 'swap' });
 
 export const metadata = {
   title: "Rohit Kumar | Creative Front-End Web Designer | Responsive & Modern Websites",
@@ -69,11 +62,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet"/>
+      
       <meta name="google-site-verification" content="OM6pgVpezoI0qeA94p9M0MhFSu38lv2SWdy0Biu6D1Y" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased ${inter.className}`}
       >
         <LoadingScreen/>
         <Container/>

@@ -84,14 +84,15 @@ const ListContent = styled.ul`
         justify-content: space-around;
         align-items: center;
         gap: 20px;
-        width: 110%;
+        width: 100%;
         text-transform: capitalize;
     `
 const Li = styled.li`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
+    text-align: center;
+    width: 20%;
     // background: red;
     position: relative;
     // overflow-x: hidden;
@@ -110,7 +111,6 @@ const Li = styled.li`
 //     }`
 
 const StyleLink = styled(Link)`
-        width: 80%;
         position: relative;
         z-index: 99;
         bottom: 0;

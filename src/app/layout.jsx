@@ -1,13 +1,16 @@
+// app/layout.js or layout.tsx (depending on your setup)
+
 import { Inter } from 'next/font/google';
 
 import "./globals.css";
-import Background from "./backgound/page"
-import Container from "./globalComponents/Components"
-import FooterPage from "./footer/page"
-import FlotingButton from "./blogs/flotingButton"
-import LoadingScreen from "./globalComponents/globalLoader"
+import Background from "./backgound/page";
+import Container from "./globalComponents/Components";
+import FooterPage from "./footer/page";
+import FlotingButton from "./blogs/flotingButton";
+import LoadingScreen from "./globalComponents/globalLoader";
 
-const inter = Inter({ subsets: ['Papyrus'], display: 'swap' });
+// ✅ Use a valid Google Font subset — 'Papyrus' is not supported by Inter
+const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
 export const metadata = {
   title: "Rohit Kumar | Creative Front-End Web Designer | Responsive & Modern Websites",
@@ -50,30 +53,22 @@ export const metadata = {
     ],
     type: "website",
   },
-
 };
 
-
-
 export default function RootLayout({ children }) {
-
-
-  
   return (
     <html lang="en">
       <head>
-      
-      <meta name="google-site-verification" content="OM6pgVpezoI0qeA94p9M0MhFSu38lv2SWdy0Biu6D1Y" />
+        {/* ✅ Move meta tags into <head> — correct practice */}
+        <meta name="google-site-verification" content="OM6pgVpezoI0qeA94p9M0MhFSu38lv2SWdy0Biu6D1Y" />
       </head>
-      <body
-        className={`antialiased ${inter.className}`}
-      >
-        <LoadingScreen/>
-        <Container/>
-        <Background/>
-        <FlotingButton/>
+      <body className={`antialiased ${inter.className}`}>
+        <LoadingScreen />
+        <Container />
+        <Background />
+        <FlotingButton />
         {children}
-        <FooterPage/>
+        <FooterPage />
       </body>
     </html>
   );

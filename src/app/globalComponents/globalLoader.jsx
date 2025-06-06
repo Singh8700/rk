@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
@@ -24,8 +24,8 @@ const ProgressText = styled.div`
   align-items: center;
   justify-content: center;
   font-family: 'Papyrus', 'Comic Sans MS', cursive;
-  text-align:center;
-`;  
+  text-align: center;
+`;
 
 const ProgressBarContainer = styled.div`
   width: 80%;
@@ -39,7 +39,7 @@ const ProgressBarContainer = styled.div`
 const ProgressBar = styled.div`
   height: 100%;
   background: #3498db;
-  width: ${props => props.percent}%;
+  width: ${props => props.$percent}%;
   transition: width 0.1s linear;
 `;
 
@@ -62,7 +62,7 @@ export default function GlobalLoader() {
     const handleLoad = () => {
       clearInterval(interval);
       setProgress(100);
-      setTimeout(() => setLoading(false), 300); // Short delay to show 100%
+      setTimeout(() => setLoading(false), 300);
     };
 
     if (document.readyState === 'complete') {
@@ -83,7 +83,7 @@ export default function GlobalLoader() {
     <LoaderWrapper>
       <ProgressText>Loading {progress}%</ProgressText>
       <ProgressBarContainer>
-        <ProgressBar percent={progress} />
+        <ProgressBar $percent={progress} />
       </ProgressBarContainer>
     </LoaderWrapper>
   );

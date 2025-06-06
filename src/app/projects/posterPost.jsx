@@ -1,6 +1,7 @@
 "use client"
 import styled from "styled-components";
 import {motion} from "framer-motion"
+import {projects} from "../apis/apis"
 // Styled Components for Responsive UI
 const Container = styled.div`
 // background:red;
@@ -147,46 +148,7 @@ const Button = styled.a`
   }
 `;
 
-// API Object Data (Fake Data)
-const projects = [
-  {
-    id: 1,
-    title: "Photoshop Poster Design Demo",
-    description: "Creative Photoshop poster design demo showcasing modern graphics and vibrant colors for marketing.",
-    image: "https://drive.google.com/file/d/1z7ByWfvyTNT2TMAzyTdLi4eCeAVRPDn0/preview",
-  },
-  {
-    id: 3,
-    title: "Photoshop Poster Design Demo",
-    description: "Creative Photoshop poster design demo showcasing modern graphics and vibrant colors for marketing.",
-    image: "https://drive.google.com/file/d/1ANWjpI-hjgAr359mQsFs4PGGU4gp4I_2/preview",
-  },
-  {
-    id: 5,
-    title: "Photoshop Poster Design Demo",
-    description: "Creative Photoshop poster design demo showcasing modern graphics and vibrant colors for marketing.",
-    image: "https://drive.google.com/file/d/1bJfgrzG33_BBhBXAGqLkekAJhFpQSCb-/preview"
-},
-{
-    id: 7,
-    title: "Photoshop Poster Design Demo",
-    description: "Creative Photoshop poster design demo showcasing modern graphics and vibrant colors for marketing.",
-    image: "https://drive.google.com/file/d/1r2M33BbfJrdh8bOlg6trHSArt0kX-9wp/preview"
-},
-  {
-    id: 8,
-    title: "CorelDRAW Logo Design",
-    description: "Professional logo created in CorelDRAW using blue and green colors, reflecting creativity and innovation.",
-    image: "https://drive.google.com/file/d/1XMwxIzCf-jhms-cXll3hNOeBMnXNBrNE/preview"
-}
-,
-  {
-    id: 2,
-    title: "CorelDRAW Logo Design",
-    description: "Professional logo created in CorelDRAW using blue and green colors, reflecting creativity and innovation.",
-    image: "https://drive.google.com/file/d/1Q52acYUW4VQlOJer6mfDFUgax0M0mXKW/preview",
-  },
-];
+
 
 export default function ProjectShowcase(props) {
   return (

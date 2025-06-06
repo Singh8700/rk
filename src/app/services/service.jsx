@@ -3,8 +3,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { FaLaptopCode, FaBullhorn, FaChartLine, FaDatabase, FaEnvelopeOpenText, FaFileExcel } from "react-icons/fa";
-import Link from "next/link";
+import {servicesData} from "../apis/apis";
 
 const ServicesContainer = styled(motion.div)`
   width: 100%;
@@ -81,44 +80,7 @@ const WhatsappLink = styled.a`
   }
 `;
 
-const servicesData = [
-  { 
-    id:6,
-    icon: <FaFileExcel />, title: "Excel Data Management", desc: "Optimize your workflow with structured, automated Excel data solutions!", link: "https://wa.me/918700750589",
-    showCase:"excelDataManagement"
 
-   },
-   { 
-    id:5,
-    icon: <FaEnvelopeOpenText />, title: "E-mail Scraping", desc: "Unlock potential leads with precision-targeted email data extraction!", link: "https://wa.me/918700750589",
-    showCase:"emailScraping"
-
-   },
-   { 
-    id:3,
-    icon: <FaChartLine />, title: "Facebook & Instagram Management", desc: "Dominate social media with engaging content and strategic growth management!", link: "https://wa.me/918700750589",
-    showCase:"fb Management"
-   },
-   { 
-    id:2,
-    icon: <FaBullhorn />, title: "Social Media Ads Campaigns", desc: "Maximize your reach with powerful, data-driven social media ad strategies!", link: "https://wa.me/918700750589",
-  showCase:"socialMediaAdsCampaigns"
-   },
- 
-  { 
-    id:1,
-    icon: <FaLaptopCode />, title: "Web Design", desc: "Stand out online with stunning, high-converting web designs tailored for success!", link: "https://wa.me/918700750589",
-  showCase:"webDesign"
-   },
-
-  { 
-    id:4,
-    icon: <FaDatabase />, title: "Web Development", desc: "Transform ideas into high-performance, feature-rich web applications!", link: "https://wa.me/918700750589",
-    showCase:"webDevelopment"
-   },
- 
- 
-];
 
 const ServicesPage = () => {
   return (

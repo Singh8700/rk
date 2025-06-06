@@ -1,51 +1,13 @@
 "use client"
 
 import {motion} from "framer-motion"
-import { useEffect } from "react"
+import {education} from "../apis/apis"
 import styled from "styled-components"
 
 const Education = () => {
-    const randomNumber = () =>{
-        return Math.floor(Math.random() * 2) + 1
-    }
+    
 
-    // console.log(randomNumber(),"about imge")
-
-    const education = [
-        {
-          year: "2017 - 2021",
-          degree: "Bachelor of Arts (Programme)",
-          institution: "Delhi University",
-          description: "B.A Programme",
-          grade: "1st Division",
-          models: `./imgs/pic0${randomNumber()}.png`
-        },
-        {
-            year: "2018 - 2019",
-            degree: "Diploma in Computer Application",
-            institution: "RIIT INFOTECH PVT. LTD.",
-            description: "Computer Application",
-            grade: "A Grade",
-            models: `./imgs/pic0${randomNumber()}.png`
-          },
-        {
-          year: "2017 - 2018",
-          degree: "Senior Secondary School (12th)",
-          institution: "G.S.B.V. D-Block Janak Puri",
-          description: "Arts with Eco",
-          grade: "74%",
-          models: `./imgs/pic0${randomNumber()}.png`
-        },
-        {
-          year: "2015 - 2016",
-          degree: "Secondary School (10th)",
-          institution: "G.S.B.V. D-Block Janak Puri",
-          description: "General Studies",
-          grade: "6.6 CGPE",
-          models: `./imgs/pic0${randomNumber()}.png`
-        },
-       
-      ]
+   
     
     //   const certifications = [
     //     {

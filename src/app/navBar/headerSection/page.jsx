@@ -20,7 +20,6 @@ const page = () => {
 export default page
 const Heading = styled.h1`
   width:100vw;
-  height:max-content;
   font-size:2rem;
   display:flex;
   justify-content:flex-end;

@@ -19,6 +19,7 @@ const StyledContainer = styled.div`
 width:100vw;
 height:max-content;
 display:flex;
-justify-content:center;
+flex-direction:column;
 align-items:center;
+justify-content:center;
 `

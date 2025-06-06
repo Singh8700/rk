@@ -62,12 +62,11 @@ const page = () => {
         <MotionImage
   initial={{ opacity: 0, scale: 0.5 }}
   animate={{ opacity: 1, scale: 1 }}
-  whileInView={{ scale: 1 }}
   src={`${basePath}/imgs/pic0${randomePic()}.jpg`}
   alt={`Random image pic0${randomePic()}`}      
   width={1200}
   height={600}
-  quality={75}
+  quality={10}
   priority
 />
           

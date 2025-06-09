@@ -1,5 +1,6 @@
 "use client"
 import styled from "styled-components"
+import { useEffect, useState } from "react";
 import Link from 'next/link';
 import {usePathname } from 'next/navigation';
 import { AiFillHome } from 'react-icons/ai';
@@ -12,45 +13,51 @@ import {motion} from 'framer-motion';
 
 
 const NavbarSection = () => {
-    
+  const [randomBgColor, setRandomBgColor] = useState('');
+
+  useEffect(() => {
+    setRandomBgColor(() => {
+      const r = Math.floor(Math.random() * 150);
+      const g = Math.floor(Math.random() * 150);
+      const b = Math.floor(Math.random() * 150);
+      return `rgba(${r}, ${g}, ${b}, 0.4)`;
+    });
+  }, []);
     const pathname = usePathname()
    const navText = [
-    {title : "Services", path : "/services", icon: <SiTheodinproject/> },
-    {title : "about", path : "/about", icon: <BsFillPersonFill/> },
-    {title : "home", path : "/", icon: <AiFillHome/> },
-    {title : "contact", path : "/contact", icon: <IoMdContact/> },
-    {title : "projects", path : "/projects", icon: <FaDiagramProject/> },
+    {title : "Service", path : "/services", icon: <SiTheodinproject/> },
+    {title : "About", path : "/about", icon: <BsFillPersonFill/> },
+    {title : "Home", path : "/", icon: <AiFillHome/> },
+    {title : "Contact", path : "/contact", icon: <IoMdContact/> },
+    {title : "Projects", path : "/projects", icon: <FaDiagramProject/> },
    ]
 
-   
 
     return (
-       <motion.div 
+       <motion.div
        initial={{opacity:0}}
        animate={{opacity:1}}
        >
-         <NavSection>
+         <NavSection style={{background: randomBgColor}}>
             <ListContent>
                 {navText.map((text, index) => (
                     <Li key={index}>
                         <StyleLink href={text.path} to={text.path}>
-                        <span 
+                        <span
                             className={`
                             ${pathname === text.path ? "active" : ""}
-                        icon`}>{text.icon}</span>
-                        <span 
+                        icon`} >{text.icon}</span>
+                        <span
                             className={`
-                            ${pathname === text.path ? "textActive" : ""}  
+                            ${pathname === text.path ? "textActive" : ""}
                         text`}>{text.title}</span>
                         </StyleLink>
-                       
                     </Li>
                 ))}
             </ListContent>
         </NavSection>
        </motion.div>
     )
-    
 }
 
 
@@ -70,8 +77,6 @@ const NavSection = styled.nav`
     border-radius: 25px;
     width: 500px;
     height: 75px;
-    background: rgba(${()=>Math.random() * 150},${()=>Math.random() * 150},${()=>Math.random() * 150},0.8);
-    backdrop-filter: blur(10px);
     color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     @media(max-width:780px){
@@ -98,17 +103,7 @@ const Li = styled.li`
     // overflow-x: hidden;
     transition: all 0.3s ease-in-out;
 `
-// const Eleme = styled.a`
-//         position: relative;
-//         z-index: 1;
-//         bottom: 0;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         flex-direction: column;
-//         margin: auto;
-        
-//     }`
+
 
 const StyleLink = styled(Link)`
         position: relative;
@@ -138,7 +133,7 @@ const StyleLink = styled(Link)`
                 z-index: 2;
                 font-size:15px;
                 transition:all linear 0.2s;
-                
+
             }
 
             &::after {
@@ -181,7 +176,7 @@ const StyleLink = styled(Link)`
             svg{
             font-size:25px;
             color:rgba(${()=>Math.random() * 150},${()=>Math.random() * 150},${()=>Math.random() * 150},0.8);
-            
+
             }
             &::after {
                 opacity: 1;
@@ -214,13 +209,17 @@ const StyleLink = styled(Link)`
         }
 
         .textActive {
-            transform: translate(0px, -10px);
+          top:20px;
+          left:20px;
+            transform: translate(-23px, -30px);
             position: relative;
-            font-weight: 700;
             font-size: 15px;
             transition: all 0.3s ease-in-out;
             text-shadow:1px 1px 5px #000;
             font-family: 'Papyrus', 'Comic Sans MS', cursive;
+            font-weight: 1000;
+            font-style: italic;
+            color:rgba(${()=>Math.random() * 255},${()=>Math.random() * 255},${()=>Math.random() * 255},1);
             padding-left:10px;
             &::after {
                 content: "";
@@ -237,5 +236,5 @@ const StyleLink = styled(Link)`
                 transition: transform 0.3s ease-in-out;
             }
         }
-    
+
         `

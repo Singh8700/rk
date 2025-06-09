@@ -18,7 +18,6 @@ const page = () => {
 
   // console.log(randomePic())
 
-  const basePath = "/rk960";
 
   return (
    <Wrapper>
@@ -62,7 +61,7 @@ const page = () => {
         <MotionImage
   initial={{ opacity: 0, scale: 0.5 }}
   animate={{ opacity: 1, scale: 1 }}
-  src={`${basePath}/imgs/pic0${randomePic()}.jpg`}
+  src={`/imgs/pic0${randomePic()}.jpg`}
   alt={`Random image pic0${randomePic()}`}      
   width={1200}
   height={600}
